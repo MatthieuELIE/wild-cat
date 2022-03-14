@@ -1,0 +1,18 @@
+.adopt-section-title {
+    text-align: center;
+    color: $shadow-color;
+}
+
+.search {
+    @include flexSpaceAround;
+    width: 80%;
+    color: $shadow-color;
+    margin: 20px auto auto;
+}
+
+.search-button  {
+    @include flexCenter;
+    width: 90%;
+    color: $shadow-color;
+    margin: 20px auto auto;
+}

@@ -2,13 +2,14 @@
 @import "abstracts/animation";
 @import "abstracts/mixins";
 @import "abstracts/variables";
+@import "abstracts/colors";
 
 //Base 
 @import "base/normalize";
 @import "base/typo";
 
 //Components
-@import "components/buttons";
+@import "components/button";
 @import "components/images";
 
 //Layout
