@@ -8,5 +8,16 @@
         font-size: 1rem;
         color: $color-secondary;
         font-family: $textPolice;
+        cursor: pointer;
+    }
+
+    .paw-button {
+        background: url(../../assets/paw2.png);
+        background-size: cover;
+        width: 50px;
+        height: auto;
+        border: none;
+        cursor: pointer;
+        transform: rotate(25deg);
     }
 }

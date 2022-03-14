@@ -1,10 +1,12 @@
-h2, label{
+h2{
     font-family: $titlePolice;
     color: $color-secondary;
 }
 
 label {
-    font-size: $fontSizeMid;
+    font-size: 1rem;
+    font-family: 'Tienne';
+    line-height: 30px;
 }
 
 h2 {
