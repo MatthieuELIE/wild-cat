@@ -1,5 +1,14 @@
 h2, label{
     font-family: $titlePolice;
+    color: $color-secondary;
+}
+
+label {
+    font-size: $fontSizeMid;
+}
+
+h2 {
+    font-size: $fontSizeHigh;  
 }
 
 select {
@@ -8,7 +17,6 @@ select {
 
 .adopt-section-title {
     text-align: center;
-    color: $shadow-color;
 }
 
 .search {

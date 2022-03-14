@@ -1,7 +1,7 @@
 const slider = document.querySelector(".slider-img");
 const imgSlider = ["./assets/Photos-chats/Bossa.jpeg ", "./assets/Photos-chats/Nova.jpg","./assets/Photos-chats/Samba.jpg", "./assets/Photos-chats/Bella.jpg"];
-const time = 200;
-const i = 0;
+const time = 5000;
+let i = 0;
 
 function changeImage() {
 

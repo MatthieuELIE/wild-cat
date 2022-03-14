@@ -366,6 +366,15 @@ template {
 
 h2, label {
   font-family: "Boogaloo", "cursive";
+  color: #1d4e89;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 select {
@@ -374,7 +383,6 @@ select {
 
 .adopt-section-title {
   text-align: center;
-  color: #2d3142;
 }
 
 .search {
