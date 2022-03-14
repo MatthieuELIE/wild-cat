@@ -1,3 +1,11 @@
+h2, label{
+    font-family: $titlePolice;
+}
+
+select {
+    font-family: $textPolice;
+}
+
 .adopt-section-title {
     text-align: center;
     color: $shadow-color;
@@ -26,3 +34,4 @@
         height: 600px;
     }
 }
+

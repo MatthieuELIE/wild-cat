@@ -359,6 +359,17 @@ template {
   padding: 5px;
   margin-top: 20px;
   box-shadow: 2px 2px 10px #2d3142;
+  font-size: 1rem;
+  color: #1d4e89;
+  font-family: "Work Sans", sans-serif;
+}
+
+h2, label {
+  font-family: "Boogaloo", "cursive";
+}
+
+select {
+  font-family: "Work Sans", sans-serif;
 }
 
 .adopt-section-title {
