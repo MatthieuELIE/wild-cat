@@ -3,10 +3,6 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
-//Base 
-@import "base/normalize";
-@import "base/typo";
-
 //Components
 @import "components/buttons";
 @import "components/images";
@@ -20,3 +16,6 @@
 //Pages
 @import "pages/carrousel";
 
+//Base 
+@import "base/normalize";
+@import "base/typo";
