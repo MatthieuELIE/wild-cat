@@ -53,6 +53,8 @@ rightBtn.addEventListener("click", function () {
 function slide(direction = 1) {
   if (direction === 1 && sliderPosition === 0) {
       return;
+  } else if (direction === -1 && sliderPosition === -16000) {
+      return;
   }
 
   sliderPosition += 800 * direction;
