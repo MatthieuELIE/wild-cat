@@ -388,6 +388,7 @@ select {
 }
 
 .btn-g {
+  filter: invert(23%) sepia(94%) saturate(868%) hue-rotate(185deg) brightness(87%) contrast(91%);
   left: 10px;
   top: 50%;
   opacity: 0.5;
@@ -399,6 +400,7 @@ select {
 }
 
 .btn-d {
+  filter: invert(23%) sepia(94%) saturate(868%) hue-rotate(185deg) brightness(87%) contrast(91%);
   right: 10px;
   top: 50%;
   transform: rotate(180deg);
