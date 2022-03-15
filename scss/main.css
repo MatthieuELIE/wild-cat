@@ -422,11 +422,11 @@ select {
 }
 
 .photo {
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-size: cover;
+  background-position: center;
   height: 100%;
   display: inline-block;
-  width: 100%;
+  width: 800px;
 }
 
 h2 {

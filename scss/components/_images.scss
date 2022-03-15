@@ -1,6 +1,7 @@
 .photo {
-    object-fit: cover;
+    background-size: cover;
+    background-position: center;
     height: 100%;
     display: inline-block;
-    width: 100%;
+    width: 800px;
 }

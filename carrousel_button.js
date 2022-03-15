@@ -8,7 +8,7 @@ document.body.onload = function() {
 
     //taille du container avec toutes les images
 
-    container.style.width=(100 * nbr) + "%";
+    container.style.width=(800 * nbr) + "px";
 
     //ajout des images dans la div qui se créé dans le carrousel
 
