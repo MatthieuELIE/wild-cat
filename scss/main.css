@@ -384,6 +384,49 @@ template {
 }
 .search-button p {
   margin-top: 10px;
+  color: #2d3142;
+}
+
+select {
+  border-radius: 10px;
+  border: 1px solid #1d4e89;
+}
+
+.btn-g, .btn-d {
+  width: 50px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.btn-g {
+  left: 10px;
+  top: 50%;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+.btn-g:hover {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.btn-d {
+  right: 10px;
+  top: 50%;
+  transform: rotate(180deg);
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+.btn-d:hover {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.photo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  display: inline-block;
+  width: 100%;
 }
 
 h2 {
@@ -431,9 +474,11 @@ select, p {
 
 .carrousel {
   width: 90%;
+  height: 500px;
   margin: 100px auto;
+  position: relative;
 }
-.carrousel img {
+.carrousel .slider-img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;

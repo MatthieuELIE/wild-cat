@@ -19,6 +19,7 @@
 
     p {
         margin-top: 10px;
+        color: $shadow-color;
     }
 
     /*.paw-button {
@@ -31,4 +32,41 @@
         margin-left: 20px;
         border-radius: 50%;
     }*/
+}
+
+
+select {
+    border-radius: 10px;
+    border: 1px solid $color-secondary  ;
+}
+
+.btn-g, .btn-d {
+    width: 50px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.btn-g {
+    left: 10px;
+    top: 50%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+
+    &:hover {
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+}
+
+.btn-d {
+    right: 10px;
+    top: 50%;
+    transform: rotate(180deg);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+
+    &:hover {
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
 }
