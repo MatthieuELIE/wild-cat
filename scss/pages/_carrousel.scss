@@ -13,7 +13,11 @@ h2 {
     font-size: $fontSizeHigh;  
 }
 
-select {
+p {
+    font-size: $fontSizeStandard;
+}
+
+select, p {
     font-family: $textPolice;
 }
 
