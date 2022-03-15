@@ -372,6 +372,7 @@ template {
   border: none;
   cursor: pointer;
   transform: rotate(25deg);
+  margin-left: 20px;
 }
 
 h2 {
