@@ -40,10 +40,14 @@ select, p {
 }
 
 .carrousel {
+    position: relative;
     width: 90%;
     height: 500px;
     margin: 100px auto;
-    position: relative;
+
+    .carrousel-container{
+        height: 100%;
+    }
 
     .slider-img {
         object-fit: cover;
