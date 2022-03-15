@@ -1,58 +1,58 @@
-h2{
-    font-family: $titlePolice;
-    color: $color-secondary;
+h2 {
+  font-family: $titlePolice;
+  color: $color-secondary;
 }
 
 label {
-    font-size: 1rem;
-    font-family: 'Tienne';
-    line-height: 30px;
+  font-size: 1rem;
+  font-family: "Tienne";
+  line-height: 30px;
 }
 
 h2 {
-    font-size: $fontSizeHigh;  
+  font-size: $fontSizeHigh;
 }
 
 p {
-    font-size: $fontSizeStandard;
+  font-size: $fontSizeStandard;
 }
 
-select, p {
-    font-family: $textPolice;
+select,
+p {
+  font-family: $textPolice;
 }
 
 .adopt-section-title {
-    text-align: center;
+  text-align: center;
 }
 
 .search {
-    @include flexSpaceAround;
-    width: 80%;
-    color: $shadow-color;
-    margin: 40px auto auto;
+  @include flexSpaceAround;
+  width: 80%;
+  color: $shadow-color;
+  margin: 40px auto auto;
 }
 
-.search-button  {
-    @include flexCenter;
-    width: 90%;
-    color: $shadow-color;
-    margin: 50px auto auto;
+.search-button {
+  @include flexCenter;
+  width: 90%;
+  color: $shadow-color;
+  margin: 50px auto auto;
 }
 
 .carrousel {
-    position: relative;
-    width: 90%;
-    height: 500px;
-    margin: 100px auto;
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 100px auto;
 
-    .carrousel-container{
-        height: 100%;
-    }
+  .carrousel-container {
+    height: 100%;
+  }
 
-    .slider-img {
-        object-fit: cover;
-        width: 100%;
-        height: 600px;
-    }
+  .slider-img {
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+  }
 }
-
