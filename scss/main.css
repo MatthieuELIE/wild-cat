@@ -479,7 +479,7 @@ select {
   height: 50px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 7vh;
+  margin-top: 20vh;
   overflow: hidden;
   border: 1px solid #000;
   font-family: "Lato", sans-serif;
@@ -633,31 +633,37 @@ p {
   font-family: "Work Sans", sans-serif;
 }
 
-.adopt-section-title {
-  text-align: center;
+.adopt-your-cat {
+  background-image: url("../../assets/card.png");
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: 75% 0%;
+  /* Bouton recherche temporaire
+  .search-button {
+    @include flexCenter;
+    width: 90%;
+    color: $shadow-color;
+    margin: 50px auto auto;
+  }
+  */
 }
-
-.search {
+.adopt-your-cat .adopt-section-title {
+  text-align: center;
+  margin-top: 10vh;
+}
+.adopt-your-cat .search {
   display: flex;
   justify-content: space-around;
   width: 80%;
   color: #2d3142;
-  margin: 40px auto auto;
+  margin: 20vh auto auto;
   background-color: #8dc9d6;
   padding: 20px;
 }
-.search .search-block {
+.adopt-your-cat .search .search-block {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.search-button {
-  display: flex;
-  justify-content: center;
-  width: 90%;
-  color: #2d3142;
-  margin: 50px auto auto;
 }
 
 .carrousel {

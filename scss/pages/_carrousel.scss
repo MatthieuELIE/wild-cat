@@ -22,30 +22,41 @@ p {
   font-family: $textPolice;
 }
 
-.adopt-section-title {
-  text-align: center;
-}
+.adopt-your-cat {
 
-.search {
-  @include flexSpaceAround;
-  width: 80%;
-  color: $shadow-color;
-  margin: 40px auto auto;
-  background-color: $color-primary;
-  padding: 20px;
+  background-image: url("../../assets/card.png");
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: 75% 0%;
 
-  .search-block {
-    @include flexColumn;
-    align-items: center
+  .adopt-section-title {
+    text-align: center;
+    margin-top: 10vh
   }
 
-}
+  .search {
+    @include flexSpaceAround;
+    width: 80%;
+    color: $shadow-color;
+    margin: 20vh auto auto;
+    background-color: $color-primary;
+    padding: 20px;
 
-.search-button {
-  @include flexCenter;
-  width: 90%;
-  color: $shadow-color;
-  margin: 50px auto auto;
+    .search-block {
+      @include flexColumn;
+      align-items: center
+    }
+
+  }
+
+  /* Bouton recherche temporaire
+  .search-button {
+    @include flexCenter;
+    width: 90%;
+    color: $shadow-color;
+    margin: 50px auto auto;
+  }
+  */
 }
 
 .carrousel {
