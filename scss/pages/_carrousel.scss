@@ -31,6 +31,14 @@ p {
   width: 80%;
   color: $shadow-color;
   margin: 40px auto auto;
+  background-color: $color-primary;
+  padding: 20px;
+
+  .search-block {
+    @include flexColumn;
+    align-items: center
+  }
+
 }
 
 .search-button {
