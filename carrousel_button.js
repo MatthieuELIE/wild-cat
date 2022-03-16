@@ -6,6 +6,21 @@ const catList = [
   { name: "chat 5", race: "bengal" },
   { name: "chat 6", race: "chartreux" },
   { name: "chat 7", race: "bengal" },
+  { name: "chat 1", race: "européen" },
+  { name: "chat 2", race: "bengal" },
+  { name: "chat 3", race: "siamois" },
+  { name: "chat 4", race: "chartreux" },
+  { name: "chat 5", race: "bengal" },
+  { name: "chat 6", race: "chartreux" },
+  { name: "chat 7", race: "bengal" },
+  { name: "chat 1", race: "européen" },
+  { name: "chat 2", race: "bengal" },
+  { name: "chat 3", race: "siamois" },
+  { name: "chat 4", race: "chartreux" },
+  { name: "chat 5", race: "bengal" },
+  { name: "chat 6", race: "chartreux" },
+  { name: "chat 7", race: "bengal" },
+
 ];
 
 const container = document.body.querySelector(".carrousel-container");
@@ -59,8 +74,7 @@ function slide(direction = 1) {
 
   if (
     direction === -1 &&
-    sliderPosition <= (catList.length - 1) * 90 * direction
-  ) {
+    sliderPosition <= (catList.length - 1) * 90 * direction) {
     return;
   }
 
