@@ -409,7 +409,7 @@ select {
   background-position: center;
   height: 100%;
   display: inline-block;
-  width: 800px;
+  width: 90vw;
 }
 
 * {
@@ -668,13 +668,20 @@ p {
 
 .carrousel {
   position: relative;
-  width: 800px;
+  width: 90vw;
   height: 500px;
   margin: 100px auto;
   overflow: hidden;
 }
 .carrousel .carrousel-container {
   height: 100%;
+}
+.carrousel .carrousel-container .photo p {
+  position: absolute;
+  display: none;
+}
+.carrousel .carrousel-container .photo.visible p {
+  display: block;
 }
 .carrousel .slider-img {
   -o-object-fit: cover;

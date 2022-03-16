@@ -23,7 +23,6 @@ p {
 }
 
 .adopt-your-cat {
-
   background-image: url("../../assets/card.png");
   background-repeat: no-repeat;
   background-size: 300px;
@@ -31,7 +30,7 @@ p {
 
   .adopt-section-title {
     text-align: center;
-    margin-top: 10vh
+    margin-top: 10vh;
   }
 
   .search {
@@ -44,9 +43,8 @@ p {
 
     .search-block {
       @include flexColumn;
-      align-items: center
+      align-items: center;
     }
-
   }
 
   /* Bouton recherche temporaire
@@ -61,13 +59,24 @@ p {
 
 .carrousel {
   position: relative;
-  width: 800px;
+  width: 90vw;
   height: 500px;
   margin: 100px auto;
   overflow: hidden;
 
   .carrousel-container {
     height: 100%;
+
+    .photo p {
+      position: absolute;
+      display: none;
+    }
+
+    .photo.visible {
+      p {
+        display: block;
+      }
+    }
   }
 
   .slider-img {
