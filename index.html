@@ -1,156 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image//png" href="assets/icon.png"/>
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Tienne:wght@400;700;900&family=Work+Sans:wght@100;400;700;800&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/0fe1c08732.js" crossorigin="anonymous"></script>
+    <title>Adopte ton chat</title>
+  </head>
 
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <body>
 
-  <link rel="icon" />
-  <link rel="stylesheet" href="./scss/main.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Tienne:wght@400;700;900&family=Work+Sans:wght@100;400;700;800&display=swap"
-    rel="stylesheet" />
+    <header>
+    </header>
 
-  <script src="https://kit.fontawesome.com/0fe1c08732.js" crossorigin="anonymous"></script>
+    <nav>
+    </nav>
 
-  <title>Adopte ton chat</title>
+    <main>
 
-</head>
+      <section class="adopt-your-cat">
 
-<body>
+        <h2 class="adopt-section-title">Adopte ton chat !</h2>
+        
+        <form class="search">
 
+          <div class="search-block">
 
-  <header>
+            <label for="location"> Localisation </label>
+            <select name="region" id="location">
 
-  </header>
+              <option value="">Choisissez une région</option>
+              <option value="Siamois">Auvergne-Rhône-Alpes</option>
+              <option value="Siamois">Bourgogne-Franche-Comté</option>
+              <option value="Siamois">Bretagne</option>
+              <option value="Siamois">Centre-Val de Loire</option>
+              <option value="Siamois">Corse</option>
+              <option value="Siamois">Grand Est</option>
+              <option value="Siamois">Hauts-de-France</option>
+              <option value="Siamois">Île-de-France</option>
+              <option value="Siamois">Normandie</option>
+              <option value="Siamois">Nouvelle-Aquitaine</option>
+              <option value="Siamois">Occitanie</option>
+              <option value="Siamois">Pays de la Loire</option>
+              <option value="Siamois">Provence-Alpes-Côte d'Azur</option>
+              <option value="Siamois">Autre</option>
 
+            </select>
+            
+          </div>
 
-  <nav>
+          <div class="search-block">
 
-  </nav>
+            <label for="cat-race"> Race </label>
+            <select name="cats" id="cat-race">
 
+              <option value="">Choisissez une race</option>
+              <option value="Siamois">Bengale</option>
+              <option value="Siamois">Balinais</option>
+              <option value="Siamois">Chartreux</option>
+              <option value="Siamois">Chat européen</option>
+              <option value="Siamois">Himalayen</option>
+              <option value="Siamois">Maine Coon</option>
+              <option value="Siamois">Persan</option>
+              <option value="Siamois">Sacré de Birmanie</option>
+              <option value="Siamois">Siamois</option>
+              <option value="Siamois">Sibérien</option>
+              <option value="Siamois">Sphynx</option>
+              <option value="Siamois">Autre</option>
 
-  <main>
+            </select>
 
-    <section class="adopt-your-cat">
-      <h2 class="adopt-section-title">Adopte ton chat !</h2>
-      <form class="search">
-        <div class="search-block">
-          <label for="location"> Localisation </label>
-          <select name="region" id="location">
-            <option value="">Choisissez une région</option>
-            <option value="Siamois">Auvergne-Rhône-Alpes</option>
-            <option value="Siamois">Bourgogne-Franche-Comté</option>
-            <option value="Siamois">Bretagne</option>
-            <option value="Siamois">Centre-Val de Loire</option>
-            <option value="Siamois">Corse</option>
-            <option value="Siamois">Grand Est</option>
-            <option value="Siamois">Hauts-de-France</option>
-            <option value="Siamois">Île-de-France</option>
-            <option value="Siamois">Normandie</option>
-            <option value="Siamois">Nouvelle-Aquitaine</option>
-            <option value="Siamois">Occitanie</option>
-            <option value="Siamois">Pays de la Loire</option>
-            <option value="Siamois">Provence-Alpes-Côte d'Azur</option>
-            <option value="Siamois">Autre</option>
-          </select>
+          </div>
+
+          <div class="search-block">
+
+            <label for="sex"> Sexe </label>
+            <select name="cats-sex" id="sex">
+
+              <option value="">Choisissez un sexe</option>
+              <option value="Siamois">Mâle</option>
+              <option value="Siamois">Femelle</option>
+
+            </select>
+
+          </div>
+
+          <div class="search-block">
+
+            <label for="cat-age"> Age </label>
+            <select name="age" id="cat-age">
+
+              <option value="">Choisissez une tranche d'âge</option>
+              <option value="Siamois">0-1 an</option>
+              <option value="Siamois">2-3 ans</option>
+              <option value="Siamois">4-6 ans</option>
+              <option value="Siamois">7-9 ans</option>
+              <option value="Siamois">10-12 ans</option>
+              <option value="Siamois">12-14 ans</option>
+              <option value="Siamois">+14 ans</option>
+
+            </select>
+
+          </div>
+
+        </form>
+
+        <div class="button-container-2">
+
+          <span class="mas">ton chat...</span>
+          <button type="button" name="Hover">Adopte</button>
+
         </div>
-        <div class="search-block">
-          <label for="cat-race"> Race </label>
-          <select name="cats" id="cat-race">
-            <option value="">Choisissez une race</option>
-            <option value="Siamois">Bengale</option>
-            <option value="Siamois">Balinais</option>
-            <option value="Siamois">Chartreux</option>
-            <option value="Siamois">Chat européen</option>
-            <option value="Siamois">Himalayen</option>
-            <option value="Siamois">Maine Coon</option>
-            <option value="Siamois">Persan</option>
-            <option value="Siamois">Sacré de Birmanie</option>
-            <option value="Siamois">Siamois</option>
-            <option value="Siamois">Sibérien</option>
-            <option value="Siamois">Sphynx</option>
-            <option value="Siamois">Autre</option>
-          </select>
+        <div>
+
+          <div class="carrousel">
+          <!--Encadrement avec "overflow : hidden" pour le carrousel-->
+
+            <div class="carrousel-container"></div>
+            <!--Div qui contient les images du carrousel-->
+            <img src="assets/previous.png" class="btn-g" />
+            <img src="assets/previous.png" class="btn-d" />
+
+          </div>
         </div>
-        <div class="search-block">
-          <label for="sex"> Sexe </label>
-          <select name="cats-sex" id="sex">
-            <option value="">Choisissez un sexe</option>
-            <option value="Siamois">Mâle</option>
-            <option value="Siamois">Femelle</option>
-          </select>
+
+      </section>
+
+      <section id="contact" class="contact-section">
+
+        <h1>Contact</h1>
+        <div class="contact-container">
+
+          <div class="contact-map">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d45262.83102152766!2d-0.5760802460277471!3d44.84342123028038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sassociation%20chat!5e0!3m2!1sfr!2sfr!4v1647336289396!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" aria-hidden="false" tabindex="0 "></iframe>
+
+          </div>
+          <div class="contact-list">
+
+            <h3>Voici quelques associations ...</h3>
+            <ul>
+              <li><a href="https://aidanimaux33.org/">AidAnimaux33</a></li>
+              <li><a href="https://associationvenus.fr/">Vénus Association</a></li>
+              <li><a href="https://www.facebook.com/100057789634269/">Une pensée féline</a></li>
+              <li><a href="https://www.groupe-sacpa.fr/">S.A.C.A.P</a></li>
+              <li><a href="https://www.fondationclara.org/">Fondation Clara</a></li>
+              <li><a href="https://www.fondationassistanceauxanimaux.org/">Assistance Animaux</a></li>
+              <li><a href="https://croquette-macadam.com/">Croquettes & Macadam</a></li>
+            </ul>
+
+          </div>
+
         </div>
-        <div class="search-block">
-          <label for="cat-age"> Age </label>
-          <select name="age" id="cat-age">
-            <option value="">Choisissez une tranche d'âge</option>
-            <option value="Siamois">0-1 an</option>
-            <option value="Siamois">2-3 ans</option>
-            <option value="Siamois">4-6 ans</option>
-            <option value="Siamois">7-9 ans</option>
-            <option value="Siamois">10-12 ans</option>
-            <option value="Siamois">12-14 ans</option>
-            <option value="Siamois">+14 ans</option>
-          </select>
-        </div>
-      </form>
-      <div class="button-container-2">
-        <span class="mas">ton chat...</span>
-        <button type="button" name="Hover">Adopte</button>
-      </div>
-      <div>
-        <div class="carrousel">
-          <!--Div qui contient les images du carrousel-->
-          <div class="carrousel-container"></div>
-          <!--<img src="assets/Photos-chats/Dominika.jpg" alt="chat noir et blanc couché dans un tube recouvert de tissu" class="slider-img" name="slide">-->
-          <img src="assets/previous.png" class="btn-g" />
-          <img src="assets/previous.png" class="btn-d" />
-        </div>
-      </div>
-    </section>
 
-    <section id="contact" class="contact-section">
-      <h1>Contact</h1>
-      <div class="contact-container">
-        <div class="contact-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d45262.83102152766!2d-0.5760802460277471!3d44.84342123028038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sassociation%20chat!5e0!3m2!1sfr!2sfr!4v1647336289396!5m2!1sfr!2sfr"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" aria-hidden="false"
-            tabindex="0 "></iframe>
-        </div>
-        <div class="contact-list">
-          <h3>Voici quelques associations ...</h3>
-          <ul>
-            <li><a href="https://aidanimaux33.org/">AidAnimaux33</a></li>
-            <li><a href="https://associationvenus.fr/">Vénus Association</a></li>
-            <li><a href="https://www.facebook.com/100057789634269/">Une pensée féline</a></li>
-            <li><a href="https://www.groupe-sacpa.fr/">S.A.C.A.P</a></li>
-            <li><a href="https://www.fondationclara.org/">Fondation Clara</a></li>
-            <li><a href="https://www.fondationassistanceauxanimaux.org/">Assistance Animaux</a></li>
-            <li><a href="https://croquette-macadam.com/">Croquettes & Macadam</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      </section>
 
+    </main>
 
-  </main>
+    <footer>
+    </footer>
 
+    <script src="carrousel_button.js"></script>
+    <script src="infos-chats.js"></script>
 
-  <footer>
-
-  </footer>
-
-
-  <script src="carrousel_button.js"></script>
-  <script src="infos-chats.js"></script>
-
-
-</body>
-
+  </body>
 </html>
