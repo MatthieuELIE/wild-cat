@@ -4,17 +4,20 @@ h2 {
   font-size: $fontSizeHigh;
 }
 
-label {
+label{
   font-size: 1rem;
-  font-family: "Tienne";
+  font-family: $subtitlePolice;
   line-height: 30px;
+}
+select {
+  font-family: $subtitlePolice !important; /*Normalize empêche la prise en compte*/
+  font-size: 0.8rem  !important;
 }
 
 p {
   font-size: $fontSizeStandard;
 }
 
-select,
 p {
   font-family: $textPolice;
 }

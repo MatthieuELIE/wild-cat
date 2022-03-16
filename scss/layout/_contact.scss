@@ -17,27 +17,33 @@
     gap: 2rem;
     margin: 10vh auto;
     max-width: 960px;
-    width: 100%;
+    width: 80%;
+    height: 400px;
     text-align: center;
     background-color: $color-primary;
-    box-shadow: 0 0 1rem rgba(0,0,0,0.43);
     overflow: hidden;
 }
 
-.contact-map iframe {
-    height: 100%;
-    min-height: 250px;
-    width: 100%;
+.contact-map {
+    grid-column: 1/3;
+
+    iframe {
+        height: 100%;
+        min-height: 250px;
+        width: 100%;
+    }
 }
 
 .contact-list {
     padding: .5rem;
     color: $color-secondary;
+    grid-column: 3/4;
 }
 
 .contact-list h3 {
     font-size: 1.5rem;
     text-align: center;
+    font-family: $subtitlePolice;
 }
 
 .contact-list ul {
@@ -47,12 +53,12 @@
 
 .contact-list ul li {
     padding: .5rem;
-    text-transform: uppercase;
 }
 
 .contact-list ul li a {
     text-decoration: none;
-    font-size: 1.2rem;
+    font-family: $textPolice;
+    font-size: 1rem;
     margin: 1rem;
     padding: .4rem 1rem;
     letter-spacing: .01rem;

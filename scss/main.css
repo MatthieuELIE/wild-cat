@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -727,13 +728,16 @@ a {
   gap: 2rem;
   margin: 10vh auto;
   max-width: 960px;
-  width: 100%;
+  width: 80%;
+  height: 400px;
   text-align: center;
   background-color: #8dc9d6;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.43);
   overflow: hidden;
 }
 
+.contact-map {
+  grid-column: 1/3;
+}
 .contact-map iframe {
   height: 100%;
   min-height: 250px;
@@ -743,11 +747,13 @@ a {
 .contact-list {
   padding: 0.5rem;
   color: #1d4e89;
+  grid-column: 3/4;
 }
 
 .contact-list h3 {
   font-size: 1.5rem;
   text-align: center;
+  font-family: "Tienne", serif;
 }
 
 .contact-list ul {
@@ -757,12 +763,12 @@ a {
 
 .contact-list ul li {
   padding: 0.5rem;
-  text-transform: uppercase;
 }
 
 .contact-list ul li a {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
   margin: 1rem;
   padding: 0.4rem 1rem;
   letter-spacing: 0.01rem;
@@ -814,15 +820,20 @@ h2 {
 
 label {
   font-size: 1rem;
-  font-family: "Tienne";
+  font-family: "Tienne", serif;
   line-height: 30px;
+}
+
+select {
+  font-family: "Tienne", serif !important;
+  /*Normalize empêche la prise en compte*/
+  font-size: 0.8rem !important;
 }
 
 p {
   font-size: 1rem;
 }
 
-select,
 p {
   font-family: "Work Sans", sans-serif;
 }
