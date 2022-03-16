@@ -4,9 +4,14 @@
 @import "abstracts/variables";
 @import "abstracts/colors";
 
+//Base 
+@import "base/normalize";
+@import "base/typo";
+
 //Components
 @import "components/button";
 @import "components/images";
+@import "components/search-button";
 
 //Layout
 @import "layout/footer";

@@ -1,0 +1,14 @@
+@mixin flexSpaceAround {
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
