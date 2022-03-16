@@ -6,26 +6,20 @@
 }
 
 .contact-section h1 {
-    margin: 2rem 0;
-    padding: .5rem 2rem;
+    font-family: $titlePolice;
     color: $color-secondary;
-    background-color: $color-primary;
-    border: 1px solid $color-secondary;
-    border-radius: 8px;
-    box-shadow: 0 0 .5rem rgba(0,0,0,0.43);
-
+    font-size: $fontSizeHigh;  
 }
 
 .contact-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    margin: auto;
+    margin: 10vh auto;
     max-width: 960px;
     width: 100%;
     text-align: center;
     background-color: $color-primary;
-    border-radius: 32px;
     box-shadow: 0 0 1rem rgba(0,0,0,0.43);
     overflow: hidden;
 }
