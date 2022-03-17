@@ -1,3 +1,4 @@
+    //Données des chats répertoriés sous forme d'objets
 const catList = [
   { name: "Beebop", race: "autre race", sexe: "mâle", age: "10 ans", localisation: "Auvergne-Rhone-Alpes" },
   { name: "Bella", race: "Balinais", sex: "femelle", age: "5 ans", localisation: "Auvergne-Rhone-Alpes"  },
@@ -52,10 +53,6 @@ for (i = 0; i < catList.length; i++) {
     console.log(event.target.dataset);
     event.target.classList.toggle("visible");
   });
-/*
-  let closingCross = document.createElement("img");
-  closingCross.src = "url('../../assets/cross.gif')";
-  closingCross.appendChild(infos);*/
 
   // Création des informations du chat
   const infos = document.createElement("p");
@@ -74,6 +71,7 @@ for (i = 0; i < catList.length; i++) {
   });
 }
 
+    // Défilement des images du carrousel avec les touches gauche et droite
 document.body.addEventListener("keyup", function (event) {
   if (event.key === "ArrowLeft") {
     slide(1);
@@ -84,6 +82,7 @@ document.body.addEventListener("keyup", function (event) {
   }
 });
 
+    // Boutons de défilement des images du carrousel
 leftBtn.addEventListener("click", function () {
   slide(1);
 });
