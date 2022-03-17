@@ -1,0 +1,59 @@
+.search-button {
+    @include flexColumn;
+    align-items: center;
+
+    button {
+        margin-top: 20px;
+        box-shadow: 2px 2px 10px $shadow-color;
+        background-color: $color-primary;
+        border-radius: 10px;
+        padding: 0 5px;
+        font-size: 1rem;
+        color: $color-secondary;
+        font-family: $textPolice;
+        cursor: pointer;
+    }
+
+    p {
+        margin-top: 10px;
+        color: $shadow-color;
+    }
+}
+
+select {
+    border-radius: 10px;
+    border: 1px solid $color-secondary  ;
+}
+
+.btn-g, .btn-d {
+    width: 50px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.btn-g {
+    filter: invert(23%) sepia(94%) saturate(868%) hue-rotate(185deg) brightness(87%) contrast(91%);    
+    left: 10px;
+    top: 50%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+
+    &:hover {
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+}
+
+.btn-d {
+    filter: invert(23%) sepia(94%) saturate(868%) hue-rotate(185deg) brightness(87%) contrast(91%);
+    right: 10px;
+    top: 50%;
+    transform: rotate(180deg);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+
+    &:hover {
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+}

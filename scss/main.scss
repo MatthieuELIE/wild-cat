@@ -4,15 +4,21 @@
 @import "abstracts/variables";
 @import "abstracts/colors";
 
+//Base 
+@import "base/normalize";
+@import "base/typo";
+
 //Components
 @import "components/button";
 @import "components/images";
+@import "components/search-button";
 
 //Layout
 @import "layout/footer";
 @import "layout/header";
 @import "layout/main_section";
 @import "layout/navigation";
+@import "layout/contact";
 
 //Pages
 @import "pages/carrousel";
