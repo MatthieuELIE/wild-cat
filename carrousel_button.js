@@ -62,9 +62,11 @@ for (i = 0; i < catList.length; i++) {
 
   container.appendChild(div);
 
+  //Sélection de la croix pour fermer le bloc infos chats
   closingCross = document.querySelector(".cross");
   console.log(closingCross);
 
+  //Evenement au click pour fermer le bloc
   closingCross.addEventListener("click", function () {
     // Au clic sur la croix, la fenêtre infos se ferme.
     div.classList.remove("visible");
