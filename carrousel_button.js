@@ -1,6 +1,6 @@
     //Données des chats répertoriés sous forme d'objets
 const catList = [
-  { name: "Beebop", race: "autre race", sexe: "mâle", age: "10 ans", localisation: "Auvergne-Rhone-Alpes" },
+  { name: "Beebop", race: "autre race", sex: "mâle", age: "10 ans", localisation: "Auvergne-Rhone-Alpes" },
   { name: "Bella", race: "Balinais", sex: "femelle", age: "5 ans", localisation: "Auvergne-Rhone-Alpes"  },
   { name: "Bossa", race: "Balinais", sex: "femelle", age: "1 ans", localisation: "Bourgogne-Franche-Comte"  },
   { name: "Chacha", race: "Bengale", sex: "femelle", age: "3 ans", localisation: "Bretagne"  },
@@ -43,7 +43,7 @@ for (i = 0; i < catList.length; i++) {
   // On attache les données du chat à l'élément div
   div.dataset.name = cat.name;
   div.dataset.race = cat.race;
-  div.dataset.sexe = cat.sex;
+  div.dataset.sex = cat.sex;
   div.dataset.age = cat.age;
   div.dataset.localisation = cat.localisation;
 
@@ -97,8 +97,7 @@ function slide(direction = 1) {
   }
 
   if (
-    direction === -1 &&
-    sliderPosition <= (catList.length - 1) * 90 * direction
+    direction === -1 && sliderPosition <= (catList.length - 1) * 90 * direction
   ) {
     return;
   }
@@ -107,18 +106,44 @@ function slide(direction = 1) {
   container.style.transform = `translateX(${sliderPosition}vw)`;
 }
 
+// Récupération des données choisies dans les onglets de recherche
+let formRegion = document.querySelector('[name="region"]').value;
+let formRace = document.querySelector('[name="cats-race"]').value;
+let formSex = document.querySelector('[name="cats-sex"]').value;
+let formAge = document.querySelector('[name="cats-age"]').value;
+
+// Données mises dans un objet
+let formSearch = {
+  "region" : formRegion,
+  "race" : formRace,
+  "sex" : formSex,
+  "age" : formAge,
+}
+
+/*
+catSearch = document.querySelector('[name="search_cats"]').addEventListener('click', function(event) {
+  event
+})
+*/
+// Lors du click sur le bouton "recherche"
+
+/*
+let formRace = document.querySelector('[name="race"]').value;
+console.log(formRace);*/
+
+
 /**
  * Formulaire de recherche : au click sur le bouton "rechercher" (addEventListener)
  * 
  * 1 - récupérer les valeurs du formulaire (région, race ...)
- * 
  * document.querySelector('[name="region"]').value
- * 2 - filtrer la liste des chats en fonction des données du formulaire
  * 
+ * 
+ * 2 - filtrer la liste des chats en fonction des données du formulaire
  * catList.filter(function(cat) {
      return cat.race === "Bengale" && cat.sexe === "femelle" ...
    })
- * 
+ *
  * 
  * 3 - reconstruire les images des chats dans le caroussel
  *

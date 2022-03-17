@@ -35,6 +35,7 @@ p {
 
   .search {
     @include flexSpaceAround;
+    flex-wrap: wrap;
     width: 80%;
     color: $shadow-color;
     margin: 20vh auto auto;
@@ -44,6 +45,7 @@ p {
     .search-block {
       @include flexColumn;
       align-items: center;
+      margin: 0px 10px;
     }
   }
 
