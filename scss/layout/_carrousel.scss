@@ -74,8 +74,28 @@ p {
 
     .photo.visible {
       p {
+        color: $shadow-color;
+        font-family: $textPolice;
+        font-weight: bold;
+        font-size: 1.2rem;
         display: block;
-        background-color: $color-primary
+        background-color: rgb(141, 201, 214, 0.5);
+        display: flex;
+        height: 100%;
+        width: 90vw;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        img {
+          height: 50px;
+          width: 50px;
+          margin-top: 10vh;
+          cursor: pointer;
+          position: absolute;
+          top: -9%;
+          right: 3%;
+        }
       }
     }
   }

@@ -1,7 +1,7 @@
 const catList = [
   {
     name: "Beebop",
-    race: "Autre",
+    race: "autre race",
     sexe: "mâle",
     age: "10 ans",
     localisation: "Bretagne",
@@ -58,14 +58,26 @@ for (i = 0; i < catList.length; i++) {
     console.log(event.target.dataset);
     event.target.classList.toggle("visible");
   });
+/*
+  let closingCross = document.createElement("img");
+  closingCross.src = "url('../../assets/cross.gif')";
+  closingCross.appendChild(infos);*/
 
   // Création des informations du chat
   const infos = document.createElement("p");
   infos.className = "infos-chats";
-  infos.innerHTML = cat.name + cat.race + cat.sexe + cat.age + cat.localisation;
+  infos.innerHTML = cat.name + ", " + cat.race +  ", " + cat.sexe +  ", " + cat.age +  ", " + cat.localisation + '<img src="assets/cross.gif" class="cross">';
   div.appendChild(infos);
 
   container.appendChild(div);
+
+  closingCross = document.querySelector(".cross");
+  console.log(closingCross);
+
+  closingCross.addEventListener("click", function () {
+    // Au clic sur la croix, la fenêtre infos se ferme.
+    div.classList.remove("visible");
+  });
 }
 
 document.body.addEventListener("keyup", function (event) {
