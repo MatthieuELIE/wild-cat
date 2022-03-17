@@ -1,26 +1,25 @@
 const catList = [
-  { name: "chat 1", race: "européen" },
-  { name: "chat 2", race: "bengal" },
-  { name: "chat 3", race: "siamois" },
-  { name: "chat 4", race: "chartreux" },
-  { name: "chat 5", race: "bengal" },
-  { name: "chat 6", race: "chartreux" },
-  { name: "chat 7", race: "bengal" },
-  { name: "chat 1", race: "européen" },
-  { name: "chat 2", race: "bengal" },
-  { name: "chat 3", race: "siamois" },
-  { name: "chat 4", race: "chartreux" },
-  { name: "chat 5", race: "bengal" },
-  { name: "chat 6", race: "chartreux" },
-  { name: "chat 7", race: "bengal" },
-  { name: "chat 1", race: "européen" },
-  { name: "chat 2", race: "bengal" },
-  { name: "chat 3", race: "siamois" },
-  { name: "chat 4", race: "chartreux" },
-  { name: "chat 5", race: "bengal" },
-  { name: "chat 6", race: "chartreux" },
-  { name: "chat 7", race: "bengal" },
-
+  { name: "Beebop", race: "Autre", sexe: "mâle", age: "10 ans", localisation: "Bretagne" },
+  { name: "Bella", race: "Balinais", sexe: "femelle", age: "5 ans" },
+  { name: "Bossa", race: "Balinais", sexe: "femelle", age: "1 ans" },
+  { name: "Chacha", race: "Bengale", sexe: "femelle", age: "3 ans" },
+  { name: "Charly", race: "Sibérien", sexe: "mâle", age: "2 ans" },
+  { name: "Chatons", race: "Bengale", sexe: "mâle", age: "0 an" },
+  { name: "Daisy", race: "Chartreux", sexe: "femelle", age: "9 ans" },
+  { name: "Dominika", race: "Chartreux", sexe: "femelle", age: "12 ans" },
+  { name: "Donatello", race: "Chartreux", sexe: "mâle", age: "8 ans" },
+  { name: "Leonardo", race: "Européen", sexe: "mâle", age: "3 ans" },
+  { name: "Luigi", race: "Européen", sexe: "mâle", age: "12 ans" },
+  { name: "Mario", race: "Européen", sexe: "mâle", age: "11 ans" },
+  { name: "Michelangelo", race: "Autre", sexe: "mâle", age: "5 ans" },
+  { name: "Nova", race: "Himalayen", sexe: "femelle", age: "3 ans" },
+  { name: "Raphaello", race: "Siamois", sexe: "mâle", age: "1 ans" },
+  { name: "Sacha", race: "Himalayen", sexe: "femelle", age: "2 ans" },
+  { name: "Samba", race: "Maine coon", sexe: "femelle", age: "6 ans" },
+  { name: "Spoutnik", race: "Sacré de Birmanie", sexe: "mâle", age: "7 ans" },
+  { name: "Sveta", race: "Maine coon", sexe: "femelle", age: "5 ans" },
+  { name: "Warrio", race: "Persan", sexe: "mâle", age: "2 ans" },
+  { name: "Koshka", race: "Persan", sexe: "femelle", age: "10 ans" },
 ];
 
 const container = document.body.querySelector(".carrousel-container");
@@ -43,6 +42,9 @@ for (i = 0; i < catList.length; i++) {
   // On attache les données du chat à l'élément div
   div.dataset.name = cat.name;
   div.dataset.race = cat.race;
+  div.dataset.sexe = cat.sexe;
+  div.dataset.age = cat.age;
+  div.dataset.localisation = cat.localisation;
 
   div.addEventListener("click", function (event) {
     // event.target contient un référence vers l'élément du DOM
@@ -53,7 +55,7 @@ for (i = 0; i < catList.length; i++) {
 
   // Création des informations du chat
   const infos = document.createElement("p");
-  infos.innerHTML = cat.name;
+  infos.innerHTML = cat.name + cat.race + cat.sexe + cat.age + cat.localisation;
   div.appendChild(infos);
 
   container.appendChild(div);
