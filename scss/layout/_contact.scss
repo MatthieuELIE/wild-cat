@@ -3,6 +3,11 @@
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    background-image: url(../../assets/contact_us.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: 0 -50px;
+    padding-top: 10vh;
 }
 
 .contact-section h1 {
@@ -16,7 +21,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin: 10vh auto;
-    max-width: 960px;
+    //max-width: 960px;
     width: 80%;
     height: 400px;
     text-align: center;
@@ -68,6 +73,15 @@
 .contact-list ul li:hover {
     transition: .9s ease;
     transform: scale(130%);
+}
+
+article {
+    display: flex;
+    
+    img {
+        width: 20%;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 768px) {
