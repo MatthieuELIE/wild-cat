@@ -1,5 +1,11 @@
 const catList = [
-  { name: "Beebop", race: "Autre", sexe: "mâle", age: "10 ans", localisation: "Bretagne" },
+  {
+    name: "Beebop",
+    race: "Autre",
+    sexe: "mâle",
+    age: "10 ans",
+    localisation: "Bretagne",
+  },
   { name: "Bella", race: "Balinais", sexe: "femelle", age: "5 ans" },
   { name: "Bossa", race: "Balinais", sexe: "femelle", age: "1 ans" },
   { name: "Chacha", race: "Bengale", sexe: "femelle", age: "3 ans" },
@@ -50,16 +56,27 @@ for (i = 0; i < catList.length; i++) {
     // event.target contient un référence vers l'élément du DOM
     // qui a lancé le click
     console.log(event.target.dataset);
-    event.target.classList.toggle('visible');
+    event.target.classList.toggle("visible");
   });
 
   // Création des informations du chat
   const infos = document.createElement("p");
+  infos.className = "infos-chats";
   infos.innerHTML = cat.name + cat.race + cat.sexe + cat.age + cat.localisation;
   div.appendChild(infos);
 
   container.appendChild(div);
 }
+
+document.body.addEventListener("keyup", function (event) {
+  if (event.key === "ArrowLeft") {
+    slide(1);
+  }
+
+  if (event.key === "ArrowRight") {
+    slide(-1);
+  }
+});
 
 leftBtn.addEventListener("click", function () {
   slide(1);
@@ -76,7 +93,8 @@ function slide(direction = 1) {
 
   if (
     direction === -1 &&
-    sliderPosition <= (catList.length - 1) * 90 * direction) {
+    sliderPosition <= (catList.length - 1) * 90 * direction
+  ) {
     return;
   }
 

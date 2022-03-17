@@ -899,6 +899,7 @@ p {
 }
 .carrousel .carrousel-container .photo.visible p {
   display: block;
+  background-color: #8dc9d6;
 }
 .carrousel .slider-img {
   -o-object-fit: cover;
