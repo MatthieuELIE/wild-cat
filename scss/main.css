@@ -739,11 +739,6 @@ footer {
     
 }
 */
-.html, body {
-  overflow: hidden;
-  height: 100%;
-}
-
 .title-text {
   color: #1d4e89;
 }
