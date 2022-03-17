@@ -765,27 +765,29 @@ a {
   }
 }
 
-.test {
+.form-container {
   width: 100%;
   margin: 2rem 0;
-  background-color: red;
+  background-color: #8dc9d6;
 }
 
-.contact-form {
+.form-box {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: 20% 20% 60%;
       grid-template-rows: 20% 20% 60%;
-  grid-column-gap: 1rem;
-  grid-row-gap: 2rem;
-  width: 65%;
-  margin: 4rem auto;
+  grid-column-gap: 2rem;
+  grid-row-gap: 1rem;
+  width: 55%;
+  margin: 3rem auto;
   padding: 1rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
-.firstName {
+.first-name {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
@@ -793,7 +795,7 @@ a {
   grid-area: 1 / 1 / 2 / 2;
 }
 
-.lastName {
+.last-name {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   -ms-grid-column: 2;
@@ -817,12 +819,87 @@ a {
   grid-area: 2 / 2 / 3 / 3;
 }
 
-.contact-message {
+.form-container h2 {
+  text-align: center;
+  margin: 2rem 0;
+  text-decoration: underline;
+}
+
+.form-box input {
+  height: 2rem;
+}
+
+.form-box textarea {
+  height: 10vh;
+  resize: none;
+}
+
+.form-message {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: 3 / 1 / 4 / 3;
+}
+
+.form-box input, .form-box textarea {
+  width: 100%;
+  font-size: 1rem;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #1d4e89;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+}
+
+.form-box input:focus, .form-box textarea:focus {
+  padding: 1.4rem;
+  font-size: 1.2rem;
+  background-color: #f79256;
+  border-radius: 5px;
+}
+
+.form-box input:focus::-webkit-input-placeholder, .form-box textarea:focus::-webkit-input-placeholder {
+  color: #1d4e89;
+}
+
+.form-box input:focus:-ms-input-placeholder, .form-box textarea:focus:-ms-input-placeholder {
+  color: #1d4e89;
+}
+
+.form-box input:focus::-ms-input-placeholder, .form-box textarea:focus::-ms-input-placeholder {
+  color: #1d4e89;
+}
+
+.form-box input:focus::placeholder, .form-box textarea:focus::placeholder {
+  color: #1d4e89;
+}
+
+.form-box input::-webkit-input-placeholder, .form-box textarea::-webkit-input-placeholder {
+  color: #1d4e89;
+}
+
+.form-box input:-ms-input-placeholder, .form-box textarea:-ms-input-placeholder {
+  color: #1d4e89;
+}
+
+.form-box input::-ms-input-placeholder, .form-box textarea::-ms-input-placeholder {
+  color: #1d4e89;
+}
+
+.form-box input::placeholder, .form-box textarea::placeholder {
+  color: #1d4e89;
+}
+
+@media screen and (max-width: 425px) {
+  .form-box {
+    display: block;
+    width: 70%;
+  }
+  .form-box input {
+    margin-bottom: 1.5rem;
+  }
 }
 
 h2 {
