@@ -1,3 +1,7 @@
+//Base 
+@import "base/normalize";
+@import "base/typo";
+
 //Abstracts
 @import "abstracts/animation";
 @import "abstracts/mixins";
@@ -21,7 +25,3 @@
 @import "layout/navigation";
 @import "layout/contact";
 @import "layout/carrousel";
-
-//Base 
-@import "base/normalize";
-@import "base/typo";

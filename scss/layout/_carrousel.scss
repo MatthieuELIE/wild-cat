@@ -10,8 +10,8 @@ label{
   line-height: 30px;
 }
 select {
-  font-family: $subtitlePolice !important; /*Normalize empêche la prise en compte*/
-  font-size: 0.8rem  !important; /*Normalize empêche la prise en compte*/
+  font-family: $subtitlePolice; /*!important; /*Normalize empêche la prise en compte*/
+  font-size: 0.8rem;  /*!important; /*Normalize empêche la prise en compte*/
 }
 
 p {

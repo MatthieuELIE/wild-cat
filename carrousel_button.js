@@ -113,8 +113,6 @@ function slide(direction = 1) {
 // Récupération du formulaire 
 let formData = document.querySelector(".search");
 
-// Récupération des données choisies dans les onglets de recherche
-
 // Données mises dans un objet
 /*let formSearch = {
   "region" : formRegion,
@@ -123,14 +121,14 @@ let formData = document.querySelector(".search");
   "age" : formAge,
 }*/
 
-// Lors du click sur le bouton "recherche"
+// Lors du click sur le bouton "recherche" on récupère les infos choisies
 catSearch = document.querySelector('[name="search_cats"]').addEventListener('click', function() {
   let formRegion = document.querySelector('[name="region"]').value;
   let formRace = document.querySelector('[name="cats-race"]').value;
   let formSex = document.querySelector('[name="cats-sex"]').value;
   let formAge = document.querySelector('[name="cats-age"]').value;
 
-  alert(formRegion);
+  alert(formRegion + formRace + formSex + formAge);
 })
 
 
