@@ -1115,8 +1115,8 @@ header {
 }
 
 .form-container {
-  width: 100%;
-  margin: 2rem 0;
+  width: 90%;
+  margin: 3.5rem 0 8rem 0;
   background-color: #8dc9d6;
 }
 
@@ -1198,8 +1198,6 @@ header {
   outline: none;
   border: none;
   border-bottom: 2px solid #1d4e89;
-  -webkit-transition: 0.4s linear;
-  transition: 0.4s linear;
 }
 
 .form-box input:focus, .form-box textarea:focus {
@@ -1207,6 +1205,8 @@ header {
   font-size: 1.2rem;
   background-color: #f79256;
   border-radius: 5px;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
 }
 
 .form-box input:focus::-webkit-input-placeholder, .form-box textarea:focus::-webkit-input-placeholder {
@@ -1249,6 +1249,28 @@ header {
   .form-box input {
     margin-bottom: 1.5rem;
   }
+}
+
+.a-propos {
+  background-color: #8dc9d6;
+  margin-top: 15%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20%;
+}
+
+.a-propos h2 {
+  text-align: center;
+  padding: 2% 0;
+}
+
+.a-propos p {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 3% 0;
 }
 
 h2 {
