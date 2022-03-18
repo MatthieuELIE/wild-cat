@@ -57,14 +57,16 @@ for (i = 0; i < catList.length; i++) {
   // Création des informations du chat
   let infos = document.createElement("p");
   infos.className = "infos-chats";
-  infos.innerHTML = cat.name + ", " + cat.race +  ", " + cat.sex +  ", " + cat.age +  ", " + cat.localisation + '<img src="assets/cross.gif" class="cross">';
+  infos.innerHTML = `
+    ${cat.name}, ${cat.race}, ${cat.sex}, ${cat.age}, ${cat.localisation}
+    <img src="assets/cross.gif" class="cross">
+  `;
   div.appendChild(infos);
 
   container.appendChild(div);
 
   //Sélection de la croix pour fermer le bloc infos chats
-  closingCross = document.querySelector(".cross");
-  console.log(closingCross);
+  closingCross = div.querySelector(".cross");
 
   //Evenement au click pour fermer le bloc
   closingCross.addEventListener("click", function () {
@@ -112,22 +114,22 @@ function slide(direction = 1) {
 let formData = document.querySelector(".search");
 
 // Récupération des données choisies dans les onglets de recherche
-let formRegion = document.querySelector('[name="region"]').value;
-console.log(formRegion);
-let formRace = document.querySelector('[name="cats-race"]').value;
-let formSex = document.querySelector('[name="cats-sex"]').value;
-let formAge = document.querySelector('[name="cats-age"]').value;
 
 // Données mises dans un objet
-let formSearch = {
+/*let formSearch = {
   "region" : formRegion,
   "race" : formRace,
   "sex" : formSex,
   "age" : formAge,
-}
+}*/
 
 // Lors du click sur le bouton "recherche"
 catSearch = document.querySelector('[name="search_cats"]').addEventListener('click', function() {
+  let formRegion = document.querySelector('[name="region"]').value;
+  let formRace = document.querySelector('[name="cats-race"]').value;
+  let formSex = document.querySelector('[name="cats-sex"]').value;
+  let formAge = document.querySelector('[name="cats-age"]').value;
+
   alert(formRegion);
 })
 
