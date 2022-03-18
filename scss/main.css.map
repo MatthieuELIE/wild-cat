@@ -17,7 +17,10 @@
         "layout/_main_section.scss",
         "layout/_navigation.scss",
         "layout/_contact.scss",
+<<<<<<< HEAD
         "layout/_form.scss",
+=======
+>>>>>>> origin/firstpro
         "pages/_carrousel.scss",
         "base/_normalize.scss",
         "base/_typo.scss"
