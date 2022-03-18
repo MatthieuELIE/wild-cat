@@ -1,184 +1,220 @@
 <!DOCTYPE html>
 <html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wild Cat</title>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image//png" href="assets/icon.png"/>
-    <link rel="stylesheet" href="./scss/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Tienne:wght@400;700;900&family=Work+Sans:wght@100;400;700;800&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/0fe1c08732.js" crossorigin="anonymous"></script>
-    <title>Adopte ton chat</title>
-  </head>
+  <link rel="stylesheet" href="./scss/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Tienne:wght@400;700;900&family=Work+Sans:wght@100;400;700;800&display=swap"
+    rel="stylesheet" />
 
-  <body>
+  <script src="https://kit.fontawesome.com/bcabde0407.js" crossorigin="anonymous"></script>
+</head>
 
-    <header>
-    </header>
-
+<body>
+  <header>
     <nav>
+      <div> <img class="logo" src="./assets/logo.png">
+      </div>
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+
+        <ul class="menu__box">
+          <li><a class="menu__item" href="#propos">A Propos</a></li>
+          <li><a class="menu__item" href="#search-your-cat">Adoptez nous</a></li>
+          <li><a class="menu__item" href="#">Soutenez nous</a></li>
+          <li><a class="menu__item" href="#contact">Contact</a></li>
+        </ul>
+
+      </div>
     </nav>
+  </header>
 
-    <main>
+  <main>
 
-      <section class="adopt-your-cat">
+    <section class="a-propos">
+      <img src="assets/Bandeau.jpg" alt="Adopte un chat">
+      <h2>A propos de nous.</h2>
 
-        <h2 class="adopt-section-title">Adopte ton chat !</h2>
-        
-        <form method="get" class="search">
-          <div class="form_container">
-            <div class="search-block">
+      <p> Nous sommes un organisme qui aide à faire connaître les associations qui recueille les chats abandonnés ou
+        errants dans la région Bordelaise et ses environs. Ces associations ont besoin d’aide pour pouvoir sauver un
+        maximum de chats et aussi leur
+        prodiguer des soins adaptés. L’objectif final est l’adoption des chats par une association, une vie heureuse
+        dans un foyer aimant ! Nous agissons pour la cause animale, toujours dans l’intérêt des chats. Pourquoi ? Car
+        nous les aimons et sommes
+        particulièrement touchés par la misère animale et souhaitons agir pour un traitement plus juste de leur sort.
+        Nous travaillons tant bien que mal à faire cesser la prolifération des chats, nous nous battons contre leur
+        éradication et militons
+        pour leur stérilisation.
+      </p>
+    </section>
 
-              <label for="location"> Localisation </label>
-              <select name="region" id="location">
+    <section class="adopt-your-cat">
+      <h2 class="adopt-section-title">Adopte ton chat !</h2>
+      <form class="search">
+        <div class="search-block">
+          <label for="location"> Localisation </label>
+          <select name="region" id="location">
+            <option value="">Choisissez une région</option>
+            <option value="Siamois">Auvergne-Rhône-Alpes</option>
+            <option value="Siamois">Bourgogne-Franche-Comté</option>
+            <option value="Siamois">Bretagne</option>
+            <option value="Siamois">Centre-Val de Loire</option>
+            <option value="Siamois">Corse</option>
+            <option value="Siamois">Grand Est</option>
+            <option value="Siamois">Hauts-de-France</option>
+            <option value="Siamois">Île-de-France</option>
+            <option value="Siamois">Normandie</option>
+            <option value="Siamois">Nouvelle-Aquitaine</option>
+            <option value="Siamois">Occitanie</option>
+            <option value="Siamois">Pays de la Loire</option>
+            <option value="Siamois">Provence-Alpes-Côte d'Azur</option>
+            <option value="Siamois">Autre</option>
+          </select>
+        </div>
+        <div class="search-block">
+          <label for="cat-race"> Race </label>
+          <select name="cats" id="cat-race">
+            <option value="">Choisissez une race</option>
+            <option value="Siamois">Bengale</option>
+            <option value="Siamois">Balinais</option>
+            <option value="Siamois">Chartreux</option>
+            <option value="Siamois">Chat européen</option>
+            <option value="Siamois">Himalayen</option>
+            <option value="Siamois">Maine Coon</option>
+            <option value="Siamois">Persan</option>
+            <option value="Siamois">Sacré de Birmanie</option>
+            <option value="Siamois">Siamois</option>
+            <option value="Siamois">Sibérien</option>
+            <option value="Siamois">Sphynx</option>
+            <option value="Siamois">Autre</option>
+          </select>
+        </div>
+        <div class="search-block">
+          <label for="sex"> Sexe </label>
+          <select name="cats-sex" id="sex">
+            <option value="">Choisissez un sexe</option>
+            <option value="Siamois">Mâle</option>
+            <option value="Siamois">Femelle</option>
+          </select>
+        </div>
+        <div class="search-block">
+          <label for="cat-age"> Age </label>
+          <select name="age" id="cat-age">
+            <option value="">Choisissez une tranche d'âge</option>
+            <option value="Siamois">0-1 an</option>
+            <option value="Siamois">2-3 ans</option>
+            <option value="Siamois">4-6 ans</option>
+            <option value="Siamois">7-9 ans</option>
+            <option value="Siamois">10-12 ans</option>
+            <option value="Siamois">12-14 ans</option>
+            <option value="Siamois">+14 ans</option>
+          </select>
+        </div>
+      </form>
+    <div class="button-container-2">
+      <span class="mas">ton chat...</span>
+      <button type="button" name="Hover">Adopte</button>
+    </div>
+    <div>
+      <div class="carrousel">
+        <!--Div qui contient les images du carrousel-->
+        <div class="carrousel-container"></div>
+        <!--<img src="assets/Photos-chats/Dominika.jpg" alt="chat noir et blanc couché dans un tube recouvert de tissu" class="slider-img" name="slide">-->
+        <img src="assets/previous.png" class="btn-g" />
+        <img src="assets/previous.png" class="btn-d" />
+      </div>
+    </div>
+    </section>
 
-                <option value="">Choisissez une ville</option>
-                <option value="Bordeaux">Bordeaux</option>
-                <option value="Pessac">Pessac</option>
-                <option value="Merignac">Mérignac</option>
-                <option value="Talence">Talence</option>
-                <option value="Cenon">Cenon</option>
-                <option value="Lormont">Lormont</option>
-                <option value="Begles">Bègles</option>
-                <option value="Floirac">Floirac</option>
-                <option value="Le Bouscat">Le Bouscat</option>
-                <option value="Saint Medard">Saint Médard</option>
-                <option value="Bruges">Bruges</option>
-                <option value="Villenave d'Ornon">Villenave d'Ornon</option>
-                <option value="Gradignan">Gradignan</option>
-                <option value="Autre">Autre</option>
+    <section id="contact" class="contact-section">
+      <h1>Contact</h1>
+      <div class="contact-container">
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d45262.83102152766!2d-0.5760802460277471!3d44.84342123028038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sassociation%20chat!5e0!3m2!1sfr!2sfr!4v1647336289396!5m2!1sfr!2sfr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" aria-hidden="false"
+            tabindex="0 "></iframe>
+        </div>
+        <div class="contact-list">
+          <h3>Voici quelques associations ...</h3>
+          <ul>
+            <li><a href="https://aidanimaux33.org/">AidAnimaux33</a></li>
+            <li><a href="https://associationvenus.fr/">Vénus Association</a></li>
+            <li><a href="https://www.facebook.com/100057789634269/">Une pensée féline</a></li>
+            <li><a href="https://www.groupe-sacpa.fr/">S.A.C.A.P</a></li>
+            <li><a href="https://www.fondationclara.org/">Fondation Clara</a></li>
+            <li><a href="https://www.fondationassistanceauxanimaux.org/">Assistance Animaux</a></li>
+            <li><a href="https://croquette-macadam.com/">Croquettes & Macadam</a></li>
+          </ul>
+        </div>
+      </div>
 
-              </select>
-              
-            </div>
-
-            <div class="search-block">
-
-              <label for="race"> Race </label>
-              <select name="cats-race" id="race">
-
-                <option value="">Choisissez une race</option>
-                <option value="Bengale">Bengale</option>
-                <option value="Balinais">Balinais</option>
-                <option value="Chartreux">Chartreux</option>
-                <option value="Chat europeen">Chat européen</option>
-                <option value="Himalayen">Himalayen</option>
-                <option value="Maine Coon">Maine Coon</option>
-                <option value="Persan">Persan</option>
-                <option value="Sacre de Birmanie">Sacré de Birmanie</option>
-                <option value="Siamois">Siamois</option>
-                <option value="Siberien">Sibérien</option>
-                <option value="Sphynx">Sphynx</option>
-                <option value="Autre">Autre</option>
-
-              </select>
-
-            </div>
-
-            <div class="search-block">
-
-              <label for="sex"> Sexe </label>
-              <select name="cats-sex" id="sex">
-
-                <option value="">Choisissez un sexe</option>
-                <option value="Male">Mâle</option>
-                <option value="Femelle">Femelle</option>
-
-              </select>
-
-            </div>
-
-            <div class="search-block">
-
-              <label for="age"> Age </label>
-              <select name="cats-age" id="age">
-
-                <option value="">Choisissez une tranche d'âge</option>
-                <option value="0-1">0-1 an</option>
-                <option value="2-3">2-3 ans</option>
-                <option value="4-6">4-6 ans</option>
-                <option value="7-9">7-9 ans</option>
-                <option value="10-12">10-12 ans</option>
-                <option value="12-14">12-14 ans</option>
-                <option value="+14">+14 ans</option>
-
-              </select>
-
-            </div>  
-          </div>
-          <div class="button-container-2">
-
-            <span class="mas">ton chat...</span>
-            <button type="submit" name="search_cats">Adopte</button>
-  
-          </div>
-
+      <div class="form-container">
+        <h2>Nous contacter :</h2>
+        <form class="form-box">
+          <input type="text" name="lastName" placeholder="Nom" class="last-name">
+          <input type="text" name="firstName" placeholder="Prénom" class="first-name">
+          <input type="text" name="phoneNumber" placeholder="Téléphone" class="phone">
+          <input type="email" name="email" placeholder="Email" class="email">
+          <textarea name="form-message" class="form-message" placeholder="Entrez votre message ici..."></textarea>
         </form>
+      </div>
 
-        <div>
 
-          <div class="carrousel">
-          <!--Encadrement avec "overflow : hidden" pour le carrousel-->
+    </section>
 
-            <div class="carrousel-container"></div>
-            <!--Div qui contient les images du carrousel-->
-            <img src="assets/previous.png" class="btn-g" />
-            <img src="assets/previous.png" class="btn-d" />
 
-          </div>
-          
+  </main>
+
+  <footer class="footer">
+
+
+    <div class="row">
+      <div class="footer-col">
+
+        <div class="Cookie">
+          <p class="toto"><a class="mention" href="#">Cookies</a></p>
+          <p class="toto"><a class="mention" href="#">Mentions Légales</a></p>
         </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="cat">Copyright© wildcat 2022.</h4>
 
-      </section>
+      </div>
+      <div class="footer-col">
+        <h4> suivez-vous</h4>
+        <div class="social-media"></div>
+        <a class="titi" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
 
-      <section id="contact" class="contact-section">
+        <a class="titi" href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
 
-        <h1>Contact</h1>
-      <!-- Bouton "envoi pour formulaire de contact"
-        <div class="button-container-3">
-          <span class="mas"></span>
-        <button type="button" name="Hover">Envoyer</button>
-        </div>
-      -->
-        <div class="contact-container">
+        <a class="titi" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      </div>
 
-          <div class="contact-map">
+    </div>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d45262.83102152766!2d-0.5760802460277471!3d44.84342123028038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sassociation%20chat!5e0!3m2!1sfr!2sfr!4v1647336289396!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" aria-hidden="false" tabindex="0 "></iframe>
+    </div>
 
-          </div>
-          <div class="contact-list">
+    <!------
+  
 
-            <h3>Associations partenaires</h3>
-            <ul>
-              <li><a href="https://aidanimaux33.org/">AidAnimaux33</a></li>
-              <li><a href="https://associationvenus.fr/">Vénus Association</a></li>
-              <li><a href="https://www.facebook.com/100057789634269/">Une pensée féline</a></li>
-              <li><a href="https://www.groupe-sacpa.fr/">S.A.C.A.P</a></li>
-              <li><a href="https://www.fondationclara.org/">Fondation Clara</a></li>
-              <li><a href="https://www.fondationassistanceauxanimaux.org/">Assistance Animaux</a></li>
-              <li><a href="https://croquette-macadam.com/">Croquettes & Macadam</a></li>
-            </ul>
+    <img class="picture" src="./assets/social_network.png">
+    ---->
+  </footer>
 
-          </div>
+  <script src="header.js"></script>
+  <script src="carrousel_button.js"></script>
+  <script src="infos-chats.js"></script>
 
-        </div>
-
-      </section>
-
-    </main>
-
-    <footer>
-    </footer>
-
-    <script src="carrousel_button.js"></script>
-    <script src="infos-chats.js"></script>
-
-  </body>
+</body>
 </html>
