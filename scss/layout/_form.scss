@@ -1,6 +1,6 @@
 .form-container {
-    width: 100%;
-    margin: 2rem 0;
+    width: 90%;
+    margin: 3.5rem 0 8rem 0;
     background-color: $color-primary;
 }
 
@@ -46,7 +46,6 @@
     outline: none;
     border: none;
     border-bottom: 2px solid $color-secondary;
-    transition: 0.4s linear;
 }
 
 .form-box input:focus, .form-box textarea:focus {
@@ -54,6 +53,7 @@
     font-size: 1.2rem;
     background-color: $color-tertiary;
     border-radius: 5px;
+    transition: 0.4s linear;
 }
 
 .form-box input:focus::placeholder, .form-box textarea:focus::placeholder {
