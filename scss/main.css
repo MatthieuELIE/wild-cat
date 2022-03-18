@@ -470,7 +470,7 @@ select {
   height: 50px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5vh;
+  margin-top: 10vh;
   overflow: hidden;
   border: 1px solid #000;
   font-family: "Lato", sans-serif;
@@ -870,16 +870,19 @@ p {
   margin-top: 10vh;
 }
 .adopt-your-cat .search {
-  display: flex;
-  justify-content: space-around;
+  /*@include flexSpaceAround;*/
   flex-wrap: wrap;
   width: 80%;
   color: #2d3142;
   margin: 20vh auto auto;
-  background-color: #8dc9d6;
+  /*background-color: $color-primary;*/
   padding: 20px;
 }
-.adopt-your-cat .search .search-block {
+.adopt-your-cat .search .form_container {
+  display: flex;
+  justify-content: center;
+}
+.adopt-your-cat .search .form_container .search-block {
   display: flex;
   flex-direction: column;
   align-items: center;

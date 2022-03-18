@@ -108,6 +108,9 @@ function slide(direction = 1) {
   container.style.transform = `translateX(${sliderPosition}vw)`;
 }
 
+// Récupération du formulaire 
+let formData = document.querySelector(".search");
+
 // Récupération des données choisies dans les onglets de recherche
 let formRegion = document.querySelector('[name="region"]').value;
 let formRace = document.querySelector('[name="cats-race"]').value;
@@ -122,16 +125,11 @@ let formSearch = {
   "age" : formAge,
 }
 
-/*
-catSearch = document.querySelector('[name="search_cats"]').addEventListener('click', function(event) {
-  event
-})
-*/
 // Lors du click sur le bouton "recherche"
+catSearch = document.querySelector('[name="search_cats"]').addEventListener('click', function() {
+  alert(formRegion);
+})
 
-/*
-let formRace = document.querySelector('[name="race"]').value;
-console.log(formRace);*/
 
 
 /**

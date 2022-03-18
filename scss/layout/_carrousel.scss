@@ -34,18 +34,22 @@ p {
   }
 
   .search {
-    @include flexSpaceAround;
+    /*@include flexSpaceAround;*/
     flex-wrap: wrap;
     width: 80%;
     color: $shadow-color;
     margin: 20vh auto auto;
-    background-color: $color-primary;
+    /*background-color: $color-primary;*/
     padding: 20px;
 
-    .search-block {
-      @include flexColumn;
-      align-items: center;
-      margin: 0px 10px;
+    .form_container {
+    @include flexCenter;
+
+      .search-block {
+        @include flexColumn;
+        align-items: center;
+        margin: 0px 10px;
+      }
     }
   }
 

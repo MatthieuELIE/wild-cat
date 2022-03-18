@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Tienne:wght@400;700;900&family=Work+Sans:wght@100;400;700;800&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/0fe1c08732.js" crossorigin="anonymous"></script>
     <title>Adopte ton chat</title>
   </head>
@@ -32,94 +32,95 @@
         <h2 class="adopt-section-title">Adopte ton chat !</h2>
         
         <form method="get" class="search">
+          <div class="form_container">
+            <div class="search-block">
 
-          <div class="search-block">
+              <label for="location"> Localisation </label>
+              <select name="region" id="location">
 
-            <label for="location"> Localisation </label>
-            <select name="region" id="location">
+                <option value="">Choisissez une ville</option>
+                <option value="Bordeaux">Bordeaux</option>
+                <option value="Pessac">Pessac</option>
+                <option value="Merignac">Mérignac</option>
+                <option value="Talence">Talence</option>
+                <option value="Cenon">Cenon</option>
+                <option value="Lormont">Lormont</option>
+                <option value="Begles">Bègles</option>
+                <option value="Floirac">Floirac</option>
+                <option value="Le Bouscat">Le Bouscat</option>
+                <option value="Saint Medard">Saint Médard</option>
+                <option value="Bruges">Bruges</option>
+                <option value="Villenave d'Ornon">Villenave d'Ornon</option>
+                <option value="Gradignan">Gradignan</option>
+                <option value="Autre">Autre</option>
 
-              <option value="">Choisissez une ville</option>
-              <option value="Bordeaux">Bordeaux</option>
-              <option value="Pessac">Pessac</option>
-              <option value="Merignac">Mérignac</option>
-              <option value="Talence">Talence</option>
-              <option value="Cenon">Cenon</option>
-              <option value="Lormont">Lormont</option>
-              <option value="Begles">Bègles</option>
-              <option value="Floirac">Floirac</option>
-              <option value="Le Bouscat">Le Bouscat</option>
-              <option value="Saint Medard">Saint Médard</option>
-              <option value="Bruges">Bruges</option>
-              <option value="Villenave d'Ornon">Villenave d'Ornon</option>
-              <option value="Gradignan">Gradignan</option>
-              <option value="Autre">Autre</option>
+              </select>
+              
+            </div>
 
-            </select>
-            
+            <div class="search-block">
+
+              <label for="race"> Race </label>
+              <select name="cats-race" id="race">
+
+                <option value="">Choisissez une race</option>
+                <option value="Bengale">Bengale</option>
+                <option value="Balinais">Balinais</option>
+                <option value="Chartreux">Chartreux</option>
+                <option value="Chat europeen">Chat européen</option>
+                <option value="Himalayen">Himalayen</option>
+                <option value="Maine Coon">Maine Coon</option>
+                <option value="Persan">Persan</option>
+                <option value="Sacre de Birmanie">Sacré de Birmanie</option>
+                <option value="Siamois">Siamois</option>
+                <option value="Siberien">Sibérien</option>
+                <option value="Sphynx">Sphynx</option>
+                <option value="Autre">Autre</option>
+
+              </select>
+
+            </div>
+
+            <div class="search-block">
+
+              <label for="sex"> Sexe </label>
+              <select name="cats-sex" id="sex">
+
+                <option value="">Choisissez un sexe</option>
+                <option value="Male">Mâle</option>
+                <option value="Femelle">Femelle</option>
+
+              </select>
+
+            </div>
+
+            <div class="search-block">
+
+              <label for="age"> Age </label>
+              <select name="cats-age" id="age">
+
+                <option value="">Choisissez une tranche d'âge</option>
+                <option value="0-1">0-1 an</option>
+                <option value="2-3">2-3 ans</option>
+                <option value="4-6">4-6 ans</option>
+                <option value="7-9">7-9 ans</option>
+                <option value="10-12">10-12 ans</option>
+                <option value="12-14">12-14 ans</option>
+                <option value="+14">+14 ans</option>
+
+              </select>
+
+            </div>  
           </div>
+          <div class="button-container-2">
 
-          <div class="search-block">
-
-            <label for="race"> Race </label>
-            <select name="cats-race" id="race">
-
-              <option value="">Choisissez une race</option>
-              <option value="Bengale">Bengale</option>
-              <option value="Balinais">Balinais</option>
-              <option value="Chartreux">Chartreux</option>
-              <option value="Chat europeen">Chat européen</option>
-              <option value="Himalayen">Himalayen</option>
-              <option value="Maine Coon">Maine Coon</option>
-              <option value="Persan">Persan</option>
-              <option value="Sacre de Birmanie">Sacré de Birmanie</option>
-              <option value="Siamois">Siamois</option>
-              <option value="Siberien">Sibérien</option>
-              <option value="Sphynx">Sphynx</option>
-              <option value="Autre">Autre</option>
-
-            </select>
-
-          </div>
-
-          <div class="search-block">
-
-            <label for="sex"> Sexe </label>
-            <select name="cats-sex" id="sex">
-
-              <option value="">Choisissez un sexe</option>
-              <option value="Male">Mâle</option>
-              <option value="Femelle">Femelle</option>
-
-            </select>
-
-          </div>
-
-          <div class="search-block">
-
-            <label for="age"> Age </label>
-            <select name="cats-age" id="age">
-
-              <option value="">Choisissez une tranche d'âge</option>
-              <option value="0-1">0-1 an</option>
-              <option value="2-3">2-3 ans</option>
-              <option value="4-6">4-6 ans</option>
-              <option value="7-9">7-9 ans</option>
-              <option value="10-12">10-12 ans</option>
-              <option value="12-14">12-14 ans</option>
-              <option value="+14">+14 ans</option>
-
-            </select>
-
+            <span class="mas">ton chat...</span>
+            <button type="submit" name="search_cats">Adopte</button>
+  
           </div>
 
         </form>
 
-        <div class="button-container-2">
-
-          <span class="mas">ton chat...</span>
-          <button type="submit" name="search_cats">Adopte</button>
-
-        </div>
         <div>
 
           <div class="carrousel">
