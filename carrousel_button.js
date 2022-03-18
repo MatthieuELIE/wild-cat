@@ -1,25 +1,25 @@
     //Données des chats répertoriés sous forme d'objets
 const catList = [
-  { name: "Beebop", race: "autre race", sex: "mâle", age: "10 ans", localisation: "Auvergne-Rhone-Alpes" },
-  { name: "Bella", race: "Balinais", sex: "femelle", age: "5 ans", localisation: "Auvergne-Rhone-Alpes"  },
-  { name: "Bossa", race: "Balinais", sex: "femelle", age: "1 ans", localisation: "Bourgogne-Franche-Comte"  },
-  { name: "Chacha", race: "Bengale", sex: "femelle", age: "3 ans", localisation: "Bretagne"  },
-  { name: "Charly", race: "Sibérien", sex: "mâle", age: "2 ans", localisation: "Bretagne"  },
-  { name: "Chatons", race: "Bengale", sex: "mâle", age: "0 an", localisation: "Centre-Val de Loire"  },
-  { name: "Daisy", race: "Chartreux", sex: "femelle", age: "9 ans", localisation: "Corse"  },
-  { name: "Dominika", race: "Chartreux", sex: "femelle", age: "12 ans", localisation: "Corse"  },
-  { name: "Donatello", race: "Chartreux", sex: "mâle", age: "8 ans", localisation: "Grand Est"  },
-  { name: "Leonardo", race: "Européen", sex: "mâle", age: "3 ans", localisation: "Hauts-de-France"  },
-  { name: "Luigi", race: "Européen", sex: "mâle", age: "12 ans", localisation: "Ile-de-France"  },
-  { name: "Mario", race: "Européen", sex: "mâle", age: "11 ans", localisation: "Ile-de-France"  },
-  { name: "Michelangelo", race: "Autre", sex: "mâle", age: "5 ans", localisation: "Ile-de-France"  },
-  { name: "Nova", race: "Himalayen", sex: "femelle", age: "3 ans", localisation: "Normandie"  },
-  { name: "Raphaello", race: "Siamois", sex: "mâle", age: "1 ans", localisation: "Nouvelle-Aquitaine"  },
-  { name: "Sacha", race: "Himalayen", sex: "femelle", age: "2 ans", localisation: "Nouvelle-Aquitaine"  },
-  { name: "Samba", race: "Maine coon", sex: "femelle", age: "6 ans", localisation: "Occitanie"  },
-  { name: "Spoutnik", race: "Sacré de Birmanie", sex: "mâle", age: "7 ans", localisation: "Pays de la Loire"  },
-  { name: "Sveta", race: "Maine coon", sex: "femelle", age: "5 ans", localisation: "Provence-Alpes-Cete d'Azur"  },
-  { name: "Warrio", race: "Persan", sex: "mâle", age: "2 ans", localisation: "Provence-Alpes-Cete d'Azur"  },
+  { name: "Beebop", race: "autre race", sex: "mâle", age: "10 ans", localisation: "Bordeaux" },
+  { name: "Bella", race: "Balinais", sex: "femelle", age: "5 ans", localisation: "Bordeaux"  },
+  { name: "Bossa", race: "Balinais", sex: "femelle", age: "1 ans", localisation: "Pessac"  },
+  { name: "Chacha", race: "Bengale", sex: "femelle", age: "3 ans", localisation: "Pessac"  },
+  { name: "Charly", race: "Sibérien", sex: "mâle", age: "2 ans", localisation: "Merignac"  },
+  { name: "Chatons", race: "Bengale", sex: "mâle", age: "0 an", localisation: "Merignac"  },
+  { name: "Daisy", race: "Chartreux", sex: "femelle", age: "9 ans", localisation: "Talence"  },
+  { name: "Dominika", race: "Chartreux", sex: "femelle", age: "12 ans", localisation: "Talence"  },
+  { name: "Donatello", race: "Chartreux", sex: "mâle", age: "8 ans", localisation: "Cenon"  },
+  { name: "Leonardo", race: "Européen", sex: "mâle", age: "3 ans", localisation: "Lormont"  },
+  { name: "Luigi", race: "Européen", sex: "mâle", age: "12 ans", localisation: "Begles"  },
+  { name: "Mario", race: "Européen", sex: "mâle", age: "11 ans", localisation: "Begles"  },
+  { name: "Michelangelo", race: "Autre", sex: "mâle", age: "5 ans", localisation: "Floirac"  },
+  { name: "Nova", race: "Himalayen", sex: "femelle", age: "3 ans", localisation: "Le Bouscat"  },
+  { name: "Raphaello", race: "Siamois", sex: "mâle", age: "1 ans", localisation: "Saint Medard"  },
+  { name: "Sacha", race: "Himalayen", sex: "femelle", age: "2 ans", localisation: "Villenave d'Ornon"  },
+  { name: "Samba", race: "Maine coon", sex: "femelle", age: "6 ans", localisation: "Bruges"  },
+  { name: "Spoutnik", race: "Sacré de Birmanie", sex: "mâle", age: "7 ans", localisation: "Villenave d'Ornon"  },
+  { name: "Sveta", race: "Maine coon", sex: "femelle", age: "5 ans", localisation: "Gradignan"  },
+  { name: "Warrio", race: "Persan", sex: "mâle", age: "2 ans", localisation: "Bordeaux"  },
   { name: "Koshka", race: "Persan", sex: "femelle", age: "10 ans", localisation: "Autre"  },
 ];
 
@@ -55,7 +55,7 @@ for (i = 0; i < catList.length; i++) {
   });
 
   // Création des informations du chat
-  const infos = document.createElement("p");
+  let infos = document.createElement("p");
   infos.className = "infos-chats";
   infos.innerHTML = cat.name + ", " + cat.race +  ", " + cat.sex +  ", " + cat.age +  ", " + cat.localisation + '<img src="assets/cross.gif" class="cross">';
   div.appendChild(infos);
@@ -113,6 +113,7 @@ let formData = document.querySelector(".search");
 
 // Récupération des données choisies dans les onglets de recherche
 let formRegion = document.querySelector('[name="region"]').value;
+console.log(formRegion);
 let formRace = document.querySelector('[name="cats-race"]').value;
 let formSex = document.querySelector('[name="cats-sex"]').value;
 let formAge = document.querySelector('[name="cats-age"]').value;

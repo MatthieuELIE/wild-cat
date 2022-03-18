@@ -374,6 +374,7 @@ template {
 select {
   border-radius: 10px;
   border: 1px solid #1d4e89;
+  text-align: center;
 }
 
 .btn-g, .btn-d {
@@ -841,6 +842,7 @@ select {
   font-family: "Tienne", sans-serif !important;
   /*Normalize empêche la prise en compte*/
   font-size: 0.8rem !important;
+  /*Normalize empêche la prise en compte*/
 }
 
 p {
@@ -856,14 +858,6 @@ p {
   background-repeat: no-repeat;
   background-size: 300px;
   background-position: 75% 0%;
-  /* Bouton recherche temporaire
-  .search-button {
-    @include flexCenter;
-    width: 90%;
-    color: $shadow-color;
-    margin: 50px auto auto;
-  }
-  */
 }
 .adopt-your-cat .adopt-section-title {
   text-align: center;
@@ -880,7 +874,8 @@ p {
 }
 .adopt-your-cat .search .form_container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .adopt-your-cat .search .form_container .search-block {
   display: flex;
@@ -933,6 +928,21 @@ p {
   height: 600px;
 }
 
+@media screen and (max-width: 962px) {
+  .form_container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 850px) {
+  .form_container {
+    background-color: #8dc9d6;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    min-width: 250px;
+    border: 1px solid #1d4e89;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
