@@ -132,6 +132,9 @@ catSearch = document.querySelector('[name="search_cats"]').addEventListener('cli
 })
 
 
+// filtrage des chats 
+
+
 
 /**
  * Formulaire de recherche : au click sur le bouton "rechercher" (addEventListener)
