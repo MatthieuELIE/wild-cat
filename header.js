@@ -1,6 +1,6 @@
-document.querySelectorAll("enu__box a li ").forEach(function(element){
+document.querySelectorAll(".menu__item ").forEach(function(element){
     element.addEventListener("click", function () {
-        document.querySelector("#toggle").checked = false;
+        document.querySelector("#menu__toggle").checked=false;
       });
     });
 
