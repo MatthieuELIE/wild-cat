@@ -1,0 +1,130 @@
+
+img{
+    width: 300px;
+}
+
+.donation{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    //background-image:url("/assets/support.png");
+    padding: auto;
+    text-align: center;
+    align-items: center;
+    margin:30px; 
+    background-color: rgba(141,201,214,0.4);
+    border-radius: 50px;
+
+    
+}
+
+.soutien-section h1{ 
+    display: flex;
+    color: $color-secondary;
+    justify-content: center;
+    background-color: $color-primary;
+    border: 1px solid $color-secondary;
+    border-radius: 8px;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.43);
+    width: 50%;
+    height: 80px;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    
+}
+.don {
+    margin-bottom: 20px;
+    width: 250px;
+    height: 230px;
+    background-color: $color-primary;
+    border-radius: 30px;
+    text-align: center;
+
+}
+.don p{
+    text-align:center;
+    font-family:roboto;
+    font-size: medium;
+    word-spacing: 0ch;
+    margin-top:30px
+    
+}
+
+
+.charity{
+    width: 250px;
+    height: 230px;
+    background-color: $color-primary;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.btn-charity{
+    background-color:$color-secondary;
+    color:#ffff;
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+.btn-don{
+    background-color:$color-secondary;
+    color:#ffff;
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    margin-top: 2rem;
+
+}
+
+
+@media screen and (min-width:768px){
+    .donation{
+       
+        text-align: center;
+        align-content: center;
+      
+
+               
+    }
+    .don{
+        width: 50%;
+        margin: auto;
+        padding: auto;
+        margin-bottom: 50px;
+    }
+    .charity{
+        display:flex;
+        width: 50%;
+        margin: auto;
+        padding: auto;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+  
+    select {
+        
+        width:50%;
+        height: 40px;
+        margin: auto;
+        padding: auto;
+        text-align: center;
+       
+        
+    }
+    .btn-charity{
+        text-align: center;
+        margin: auto;
+        padding: auto;
+        
+    }
+    .btn-don{
+        margin-top: 60px;
+    }
+
+}
+    
