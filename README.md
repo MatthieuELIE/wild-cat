@@ -1,4 +1,4 @@
-Wild Code School
+# Wild Code School
 
 Projet 1 avec le groupe Wild Cat
 
@@ -16,3 +16,22 @@ https://trello.com/b/TFaVOqyx/r%C3%A9partitions-des-mission-du-projet-adopte-un-
 
 Lien du Figma :
 https://www.figma.com/file/UQH0fQKt2Z84pD9QIzRJNT/Adopte-ton-chat?node-id=0%3A1
+
+## GIT
+### 1 - Pour commencer une feature :
+```
+git checkout main
+git pull
+git checkout -b mybranch
+```
+
+### 2 - Merger régulièrement main dans votre branche et surtout avant de faire votre Pull Request :
+```
+git pull origin main
+```
+
+### 3 - Pousser votre branche pour créer votre Pull Request :
+```
+git push
+```
+
