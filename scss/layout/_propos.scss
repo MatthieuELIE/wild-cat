@@ -1,21 +1,32 @@
 .a-propos {
-    background-color: #8dc9d6;
-    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    position: relative;
+    padding: 5%;
 }
 
-img {
+.a-propos h3 {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    font-size: 5vw;
+    padding-right: 5%;
+    font-family: $textPolice;
+    color: white;
+}
+
+.a-propos img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 20%;
 }
 
-.a-propos h2 {
+.nous {
+    background-color: $color-primary;
+    padding: 3em;
+}
+
+.nous h2 {
     text-align: center;
-    padding: 2% 0;
-}
-
-.a-propos p {
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 3% 0;
+    margin-bottom: 1em;
 }
