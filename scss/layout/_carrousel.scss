@@ -73,9 +73,9 @@ p {
     .photo.visible {
       p {
         color: $shadow-color;
-        font-family: $textPolice;
-        font-weight: bold;
-        font-size: 1.2rem;
+        font-family: $titlePolice;
+        font-weight: 900;
+        font-size: 1.6rem;
         display: block;
         background-color: rgb(141, 201, 214);
         display: flex;
@@ -84,6 +84,7 @@ p {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        opacity: 0.8;
 
         img {
           height: 50px;

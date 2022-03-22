@@ -1558,9 +1558,9 @@ p {
 }
 .carrousel .carrousel-container .photo.visible p {
   color: #2d3142;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 1.2rem;
+  font-family: "Boogaloo", "cursive";
+  font-weight: 900;
+  font-size: 1.6rem;
   display: block;
   background-color: #8dc9d6;
   display: flex;
@@ -1569,6 +1569,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  opacity: 0.8;
 }
 .carrousel .carrousel-container .photo.visible p img {
   height: 50px;
