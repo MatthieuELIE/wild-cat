@@ -122,14 +122,15 @@ let formData = document.querySelector(".search");
 }*/
 
 // Lors du click sur le bouton "recherche" on récupère les infos choisies
-catSearch = document.querySelector('[name="search_cats"]').addEventListener('click', function () {
+catSearch = document.querySelector('[name="search_cats"]').addEventListener('click', function() {
   let formRegion = document.querySelector('[name="region"]').value;
   let formRace = document.querySelector('[name="cats-race"]').value;
   let formSex = document.querySelector('[name="cats-sex"]').value;
   let formAge = document.querySelector('[name="cats-age"]').value;
 
   alert(formRegion + formRace + formSex + formAge);
-});
+})
+
 
 
 // filtrage des chats 
