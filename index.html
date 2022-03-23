@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wild Cat</title>
+  <title>Adopte ton chat</title>
 
   <link rel="stylesheet" href="./scss/main.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -58,53 +58,54 @@
         <div class="form_container">
           <div class="search-block">
             <label for="location"> Localisation </label>
-            <select name="region" id="location">
+            <select name="region" id="location" class="select_field">
               <option value="">Choisissez une région</option>
               <option value="Bordeaux">Bordeaux</option>
               <option value="Pessac">Pessac</option>
               <option value="Talence">Talence</option>
               <option value="Gradignan">Gradignan</option>
-              <option value="Begles">Bègles</option>
+              <option value="Bègles">Bègles</option>
               <option value="Villenave d'Ornon">Villenave d'Ornon</option>
               <option value="Floirac">Floirac</option>
               <option value="Cenon">Cenon</option>
               <option value="Lormont">Lormont</option>
-              <option value="Saint Medard en Jalles">Saint Médard en Jalles</option>
+              <option value="Saint Médard en Jalles">Saint Médard en Jalles</option>
               <option value="Blanquefort">Blanquefort</option>
               <option value="Eysines">Eysines</option>
               <option value="Bruges">Bruges</option>
+              <option value="Mérignac">Mérignac</option>
               <option value="Autre">Autre</option>
             </select>
           </div>
           <div class="search-block">
-            <label for="cats-race"> Race </label>
-            <select name="cats-race" id="cat-race">
+            <label for="cats-breed"> Race </label>
+            <select name="cats-breed" id="cat-breed" class="select_field">
               <option value="">Choisissez une race</option>
               <option value="Bengale">Bengale</option>
               <option value="Balinais">Balinais</option>
               <option value="Chartreux">Chartreux</option>
-              <option value="Chat europeen">Chat européen</option>
+              <option value="Chat européen">Chat européen</option>
               <option value="Himalayen">Himalayen</option>
               <option value="Maine Coon">Maine Coon</option>
               <option value="Persan">Persan</option>
-              <option value="Sacre de Birmanie">Sacré de Birmanie</option>
+              <option value="Sacré de Birmanie">Sacré de Birmanie</option>
               <option value="Siamois">Siamois</option>
-              <option value="Siberien">Sibérien</option>
+              <option value="Sibérien">Sibérien</option>
               <option value="Sphynx">Sphynx</option>
               <option value="Autre">Autre</option>
             </select>
           </div>
           <div class="search-block">
             <label for="sex"> Sexe </label>
-            <select name="cats-sex" id="sex">
+            <select name="cats-sex" id="sex" class="select_field">
               <option value="">Choisissez un sexe</option>
-              <option value="Male">Mâle</option>
-              <option value="Femelle">Femelle</option>
+              <option value="mâle">Mâle</option>
+              <option value="femelle">Femelle</option>
             </select>
           </div>
           <div class="search-block">
             <label for="cat-age"> Age </label>
-            <select name="cats-age" id="cat-age">
+            <select name="cats-age" id="cat-age" class="select_field">
               <option value="">Choisissez une tranche d'âge</option>
               <option value="0-1">0-1 an</option>
               <option value="2-3">2-3 ans</option>
@@ -112,13 +113,19 @@
               <option value="7-9">7-9 ans</option>
               <option value="10-12">10-12 ans</option>
               <option value="12-14">12-14 ans</option>
-              <option value="+14">+14 ans</option>
+              <option value="14-20">+14 ans</option>
             </select>
           </div>
         </div>
-        <div class="button-container-2">
-          <span class="mas">ton chat...</span>
-          <button type="button" name="search_cats">Adopte</button>
+        <div class="search_buttons_block">
+          <div class="button-container-2">
+            <span class="mas">ton chat...</span>
+            <button type="button" name="search_cats">Adopte</button>
+          </div>
+          <div class="button-container-2">
+            <span class="mas">la liste de chats...</span>
+            <button type="button" name="reset_cats">Réinitialiser</button>
+          </div>
         </div>
       </form>
 

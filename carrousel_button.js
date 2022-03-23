@@ -1,28 +1,155 @@
-    //Données des chats répertoriés sous forme d'objets
+//Données des chats répertoriés sous forme d'objets
 const catList = [
-  { name: "Beebop", race: "autre race", sex: "mâle", age: "10 ans", localisation: "Bordeaux" },
-  { name: "Bella", race: "Balinais", sex: "femelle", age: "5 ans", localisation: "Bordeaux"  },
-  { name: "Bossa", race: "Balinais", sex: "femelle", age: "1 ans", localisation: "Pessac"  },
-  { name: "Chacha", race: "Bengale", sex: "femelle", age: "3 ans", localisation: "Pessac"  },
-  { name: "Charly", race: "Sibérien", sex: "mâle", age: "2 ans", localisation: "Merignac"  },
-  { name: "Chatons", race: "Bengale", sex: "mâle", age: "0 an", localisation: "Merignac"  },
-  { name: "Daisy", race: "Chartreux", sex: "femelle", age: "9 ans", localisation: "Talence"  },
-  { name: "Dominika", race: "Chartreux", sex: "femelle", age: "12 ans", localisation: "Talence"  },
-  { name: "Donatello", race: "Chartreux", sex: "mâle", age: "8 ans", localisation: "Cenon"  },
-  { name: "Leonardo", race: "Européen", sex: "mâle", age: "3 ans", localisation: "Lormont"  },
-  { name: "Luigi", race: "Européen", sex: "mâle", age: "12 ans", localisation: "Begles"  },
-  { name: "Mario", race: "Européen", sex: "mâle", age: "11 ans", localisation: "Begles"  },
-  { name: "Michelangelo", race: "Autre", sex: "mâle", age: "5 ans", localisation: "Floirac"  },
-  { name: "Nova", race: "Himalayen", sex: "femelle", age: "3 ans", localisation: "Le Bouscat"  },
-  { name: "Raphaello", race: "Siamois", sex: "mâle", age: "1 ans", localisation: "Saint Medard"  },
-  { name: "Sacha", race: "Himalayen", sex: "femelle", age: "2 ans", localisation: "Villenave d'Ornon"  },
-  { name: "Samba", race: "Maine coon", sex: "femelle", age: "6 ans", localisation: "Bruges"  },
-  { name: "Spoutnik", race: "Sacré de Birmanie", sex: "mâle", age: "7 ans", localisation: "Villenave d'Ornon"  },
-  { name: "Sveta", race: "Maine coon", sex: "femelle", age: "5 ans", localisation: "Gradignan"  },
-  { name: "Warrio", race: "Persan", sex: "mâle", age: "2 ans", localisation: "Bordeaux"  },
-  { name: "Koshka", race: "Persan", sex: "femelle", age: "10 ans", localisation: "Autre"  },
+  {
+    name: "Beebop",
+    breed: "Autre",
+    sex: "mâle",
+    age: 10,
+    localisation: "Bordeaux",
+  },
+  {
+    name: "Bella",
+    breed: "Balinais",
+    sex: "femelle",
+    age: 5,
+    localisation: "Bordeaux",
+  },
+  {
+    name: "Bossa",
+    breed: "Balinais",
+    sex: "femelle",
+    age: 1,
+    localisation: "Pessac",
+  },
+  {
+    name: "Chacha",
+    breed: "Bengale",
+    sex: "femelle",
+    age: 3,
+    localisation: "Pessac",
+  },
+  {
+    name: "Charly",
+    breed: "Sibérien",
+    sex: "mâle",
+    age: 2,
+    localisation: "Mérignac",
+  },
+  {
+    name: "Chatons",
+    breed: "Bengale",
+    sex: "mâle",
+    age: 0.5,
+    localisation: "Mérignac",
+  },
+  {
+    name: "Daisy",
+    breed: "Chartreux",
+    sex: "femelle",
+    age: 9,
+    localisation: "Talence",
+  },
+  {
+    name: "Dominika",
+    breed: "Chartreux",
+    sex: "femelle",
+    age: 12,
+    localisation: "Talence",
+  },
+  {
+    name: "Donatello",
+    breed: "Chartreux",
+    sex: "mâle",
+    age: 8,
+    localisation: "Cenon",
+  },
+  {
+    name: "Leonardo",
+    breed: "Chat européen",
+    sex: "mâle",
+    age: 3,
+    localisation: "Lormont",
+  },
+  {
+    name: "Luigi",
+    breed: "Chat européen",
+    sex: "mâle",
+    age: 12,
+    localisation: "Bègles",
+  },
+  {
+    name: "Mario",
+    breed: "Chat européen",
+    sex: "mâle",
+    age: 11,
+    localisation: "Bègles",
+  },
+  {
+    name: "Michelangelo",
+    breed: "Autre",
+    sex: "mâle",
+    age: 5,
+    localisation: "Floirac",
+  },
+  {
+    name: "Nova",
+    breed: "Himalayen",
+    sex: "femelle",
+    age: 3,
+    localisation: "Le Bouscat",
+  },
+  {
+    name: "Raphaello",
+    breed: "Siamois",
+    sex: "mâle",
+    age: 1,
+    localisation: "Saint Médard en Jalles",
+  },
+  {
+    name: "Sacha",
+    breed: "Himalayen",
+    sex: "femelle",
+    age: 2,
+    localisation: "Villenave d'Ornon",
+  },
+  {
+    name: "Samba",
+    breed: "Maine coon",
+    sex: "femelle",
+    age: 6,
+    localisation: "Bruges",
+  },
+  {
+    name: "Spoutnik",
+    breed: "Sacré de Birmanie",
+    sex: "mâle",
+    age: 7,
+    localisation: "Villenave d'Ornon",
+  },
+  {
+    name: "Sveta",
+    breed: "Maine coon",
+    sex: "femelle",
+    age: 5,
+    localisation: "Gradignan",
+  },
+  {
+    name: "Warrio",
+    breed: "Persan",
+    sex: "mâle",
+    age: 2,
+    localisation: "Bordeaux",
+  },
+  {
+    name: "Koshka",
+    breed: "Persan",
+    sex: "femelle",
+    age: 10,
+    localisation: "Autre",
+  },
 ];
 
+let filteredCatList = [...catList];
 const container = document.body.querySelector(".carrousel-container");
 const leftBtn = document.querySelector(".btn-g");
 const rightBtn = document.querySelector(".btn-d");
@@ -31,51 +158,61 @@ let sliderPosition = 0;
 //taille du container avec toutes les images
 container.style.width = 90 * catList.length + "vw";
 
-//ajout des images dans la div qui se créé dans le carrousel
+//Mets à jour la liste des chat avec les données fournies
+function updateCatList() {
+  container.innerHTML = "";
+  sliderPosition = 0;
+  container.style.transform = `translateX(0)`;
 
-for (i = 0; i < catList.length; i++) {
-  const cat = catList[i];
+  //Pour chaque chat on ajoute l'image correspondante
+  for (const cat of filteredCatList) {
+    const div = document.createElement("div");
+    div.className = "photo";
+    div.style.backgroundImage =
+      "url('./assets/Photos-chats/" + cat.name + ".jpg')";
 
-  const div = document.createElement("div");
-  div.className = "photo";
-  div.style.backgroundImage = "url('./assets/Photos-chats/img" + i + ".jpg')";
+    // On attache les données du chat à l'élément div
+    div.dataset.name = cat.name;
+    div.dataset.breed = cat.breed;
+    div.dataset.sex = cat.sex;
+    div.dataset.age = cat.age;
+    div.dataset.localisation = cat.localisation;
 
-  // On attache les données du chat à l'élément div
-  div.dataset.name = cat.name;
-  div.dataset.race = cat.race;
-  div.dataset.sex = cat.sex;
-  div.dataset.age = cat.age;
-  div.dataset.localisation = cat.localisation;
+    //Au click sur la photo du chat on affiche les infos
+    div.addEventListener("click", function (event) {
+      // event.target contient un référence vers l'élément du DOM
+      // qui a lancé le click
+      console.log(event.target.dataset);
+      event.target.classList.toggle("visible");
+    });
 
-  div.addEventListener("click", function (event) {
-    // event.target contient un référence vers l'élément du DOM
-    // qui a lancé le click
-    console.log(event.target.dataset);
-    event.target.classList.toggle("visible");
-  });
+    // Création des informations du chat
+    let infos = document.createElement("p");
+    infos.className = "infos-chats";
+    infos.innerHTML = `
+      ${cat.name}, ${cat.breed}, ${cat.sex}, ${cat.age}, ${cat.localisation}
+      <img src="assets/cross.gif" class="cross">
+    `;
 
-  // Création des informations du chat
-  let infos = document.createElement("p");
-  infos.className = "infos-chats";
-  infos.innerHTML = `
-    ${cat.name}, ${cat.race}, ${cat.sex}, ${cat.age}, ${cat.localisation}
-    <img src="assets/cross.gif" class="cross">
-  `;
-  div.appendChild(infos);
+    //On lie les éléments
+    div.appendChild(infos);
+    container.appendChild(div);
 
-  container.appendChild(div);
+    //Sélection de la croix pour fermer le bloc infos chats
+    closingCross = div.querySelector(".cross");
 
-  //Sélection de la croix pour fermer le bloc infos chats
-  closingCross = div.querySelector(".cross");
-
-  //Evenement au click pour fermer le bloc
-  closingCross.addEventListener("click", function () {
-    // Au clic sur la croix, la fenêtre infos se ferme.
-    div.classList.remove("visible");
-  });
+    //Evenement au click pour fermer le bloc
+    closingCross.addEventListener("click", function () {
+      // Au clic sur la croix, la fenêtre infos se ferme.
+      div.classList.remove("visible");
+    });
+  }
 }
 
-    // Défilement des images du carrousel avec les touches gauche et droite
+//ajout des images dans la div qui se créé dans le carrousel
+updateCatList(catList);
+
+// Défilement des images du carrousel avec les touches gauche et droite
 document.body.addEventListener("keyup", function (event) {
   if (event.key === "ArrowLeft") {
     slide(1);
@@ -86,7 +223,7 @@ document.body.addEventListener("keyup", function (event) {
   }
 });
 
-    // Boutons de défilement des images du carrousel
+// Boutons de défilement des images du carrousel
 leftBtn.addEventListener("click", function () {
   slide(1);
 });
@@ -101,7 +238,8 @@ function slide(direction = 1) {
   }
 
   if (
-    direction === -1 && sliderPosition <= (catList.length - 1) * 90 * direction
+    direction === -1 &&
+    sliderPosition <= (filteredCatList.length - 1) * 90 * direction
   ) {
     return;
   }
@@ -110,31 +248,45 @@ function slide(direction = 1) {
   container.style.transform = `translateX(${sliderPosition}vw)`;
 }
 
-// Récupération du formulaire 
+// Récupération du formulaire
 let formData = document.querySelector(".search");
 
-// Données mises dans un objet
-/*let formSearch = {
-  "region" : formRegion,
-  "race" : formRace,
-  "sex" : formSex,
-  "age" : formAge,
-}*/
-
 // Lors du click sur le bouton "recherche" on récupère les infos choisies
-catSearch = document.querySelector('[name="search_cats"]').addEventListener('click', function() {
-  let formRegion = document.querySelector('[name="region"]').value;
-  let formRace = document.querySelector('[name="cats-race"]').value;
-  let formSex = document.querySelector('[name="cats-sex"]').value;
-  let formAge = document.querySelector('[name="cats-age"]').value;
+catSearch = document
+  .querySelector('[name="search_cats"]')
+  .addEventListener("click", function () {
+    let formRegion = document.querySelector('[name="region"]').value;
+    let formBreed = document.querySelector('[name="cats-breed"]').value;
+    let formSex = document.querySelector('[name="cats-sex"]').value;
+    let formAge = document.querySelector('[name="cats-age"]').value;
+    //On transforme la tranche d'age sous forme de tableau avec 2 colonnes (age min et age max)
+    let [minAge, maxAge] = formAge.split("-").map((age) => parseInt(age)); // exemple [10, 12]
 
-  alert(formRegion + formRace + formSex + formAge);
-})
+    console.log({ formRegion, formBreed, formSex, minAge, maxAge });
 
+    // filtrage des chats
+    filteredCatList = catList.filter(
+      (cat) =>
+        cat.localisation === formRegion &&
+        cat.breed === formBreed &&
+        cat.sex === formSex &&
+        cat.age >= minAge && 
+        cat.age <= maxAge
+    );
 
+    console.table(filteredCatList);
 
-// filtrage des chats 
+    updateCatList();
+  });
 
+  resetButton = document.querySelector('[name="reset_cats"').addEventListener('click', function(){
+    filteredCatList = [...catList];
+    updateCatList();
+  });
+
+// Reset la liste de chat reset_cats
+// filteredCatList = [...catList]
+// updateCatList()
 
 
 /**
@@ -146,7 +298,7 @@ catSearch = document.querySelector('[name="search_cats"]').addEventListener('cli
  * 
  * 2 - filtrer la liste des chats en fonction des données du formulaire
  * catList.filter(function(cat) {
-     return cat.race === "Bengale" && cat.sexe === "femelle" ...
+     return cat.breed === "Bengale" && cat.sexe === "femelle" ...
    })
  *
  * 

@@ -8,6 +8,7 @@ label{
   font-size: 1rem;
   font-family: $subtitlePolice;
   line-height: 30px;
+  font-weight: bolder;
 }
 select {
   font-family: $subtitlePolice; /*!important; /*Normalize empêche la prise en compte*/
@@ -106,10 +107,18 @@ p {
   }
 }
 
+.select_field {
+  width: 100%;
+}
+
 @media screen and (max-width: 962px) {
 
   .form_container {
     flex-direction: column;
+  }
+
+  .select_field {
+    width: 50%;
   }
 }
 
@@ -122,5 +131,9 @@ p {
     padding: 10px;
     min-width: 250px;
     border: 1px solid $color-secondary;
+  }
+
+  .select_field {
+    width: 75%;
   }
 }
