@@ -279,9 +279,9 @@ catSearch = document
     updateCatList();
   });
 
-  resetButton = document.querySelector('[name="reset_cats"').addEventListener('click', function(event){
+  resetButton = document.querySelector('[name="reset_cats"').addEventListener('click', function(){
     filteredCatList = [...catList];
-    updateCatList()
+    updateCatList();
   });
 
 // Reset la liste de chat reset_cats
