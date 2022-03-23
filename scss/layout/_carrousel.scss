@@ -8,6 +8,7 @@ label{
   font-size: 1rem;
   font-family: $subtitlePolice;
   line-height: 30px;
+  font-weight: bolder;
 }
 select {
   font-family: $subtitlePolice; /*!important; /*Normalize empêche la prise en compte*/
@@ -73,9 +74,9 @@ p {
     .photo.visible {
       p {
         color: $shadow-color;
-        font-family: $textPolice;
-        font-weight: bold;
-        font-size: 1.2rem;
+        font-family: $titlePolice;
+        font-weight: 900;
+        font-size: 1.6rem;
         display: block;
         background-color: rgb(141, 201, 214);
         display: flex;
@@ -84,6 +85,7 @@ p {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        opacity: 0.8;
 
         img {
           height: 50px;
@@ -105,10 +107,18 @@ p {
   }
 }
 
+.select_field {
+  width: 100%;
+}
+
 @media screen and (max-width: 962px) {
 
   .form_container {
     flex-direction: column;
+  }
+
+  .select_field {
+    width: 50%;
   }
 }
 
@@ -121,5 +131,9 @@ p {
     padding: 10px;
     min-width: 250px;
     border: 1px solid $color-secondary;
+  }
+
+  .select_field {
+    width: 75%;
   }
 }
