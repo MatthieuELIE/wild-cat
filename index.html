@@ -163,13 +163,14 @@
 
       <div class="form-container">
         <h2>Nous contacter :</h2>
-        <form class="form-box">
-          <input type="text" name="lastName" placeholder="Nom" class="last-name">
-          <input type="text" name="firstName" placeholder="Prénom" class="first-name">
-          <input type="text" name="phoneNumber" placeholder="Téléphone" class="phone">
-          <input type="email" name="email" placeholder="Email" class="email">
-          <textarea name="form-message" class="form-message" placeholder="Entrez votre message ici..."></textarea>
+        <form class="form-box" id="form">
+          <input type="text" id="formLastName" placeholder="Nom" class="last-name">
+          <input type="text" id="formFirstName" placeholder="Prénom" class="first-name">
+          <input type="text" id="formPhone" placeholder="Téléphone" class="phone">
+          <input type="email" id="formEmail" placeholder="Email" class="email">
+          <textarea id="formMessage" class="form-message" placeholder="Entrez votre message ici..."></textarea>
         </form>
+        <button id="formButton" class="form-btn" type="submit" disabled>Envoyer</button>
       </div>
 
 
@@ -217,6 +218,7 @@
   <script src="header.js"></script>
   <script src="carrousel_button.js"></script>
   <script src="infos-chats.js"></script>
+  <script src="form.js"></script>
 
 </body>
 
