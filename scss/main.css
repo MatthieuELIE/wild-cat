@@ -413,6 +413,12 @@ select {
   justify-content: center;
 }
 
+@media screen and (max-width: 850px) {
+  .search_buttons_block {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .photo {
   background-size: cover;
   background-position: center;
@@ -474,8 +480,8 @@ select {
   position: relative;
   width: 100px;
   height: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 10vh;
   overflow: hidden;
   border: 1px solid #000;
@@ -1178,6 +1184,7 @@ label {
   font-size: 1rem;
   font-family: "Tienne", sans-serif;
   line-height: 30px;
+  font-weight: bolder;
 }
 
 select {
@@ -1271,9 +1278,17 @@ p {
   height: 600px;
 }
 
+.select_field {
+  width: 100%;
+}
+
 @media screen and (max-width: 962px) {
   .form_container {
     flex-direction: column;
+  }
+
+  .select_field {
+    width: 50%;
   }
 }
 @media screen and (max-width: 850px) {
@@ -1284,6 +1299,10 @@ p {
     padding: 10px;
     min-width: 250px;
     border: 1px solid #1d4e89;
+  }
+
+  .select_field {
+    width: 75%;
   }
 }
 .form-container {
