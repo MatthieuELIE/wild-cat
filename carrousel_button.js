@@ -11,140 +11,140 @@ const catList = [
     name: "Bella",
     breed: "Balinais",
     sex: "femelle",
-    age: "5",
+    age: 5,
     localisation: "Bordeaux",
   },
   {
     name: "Bossa",
     breed: "Balinais",
     sex: "femelle",
-    age: "1",
+    age: 1,
     localisation: "Pessac",
   },
   {
     name: "Chacha",
     breed: "Bengale",
     sex: "femelle",
-    age: "3",
+    age: 3,
     localisation: "Pessac",
   },
   {
     name: "Charly",
     breed: "Sibérien",
     sex: "mâle",
-    age: "2",
-    localisation: "Merignac",
+    age: 2,
+    localisation: "Mérignac",
   },
   {
     name: "Chatons",
     breed: "Bengale",
     sex: "mâle",
-    age: "0.5",
-    localisation: "Merignac",
+    age: 0.5,
+    localisation: "Mérignac",
   },
   {
     name: "Daisy",
     breed: "Chartreux",
     sex: "femelle",
-    age: "9",
+    age: 9,
     localisation: "Talence",
   },
   {
     name: "Dominika",
     breed: "Chartreux",
     sex: "femelle",
-    age: "12",
+    age: 12,
     localisation: "Talence",
   },
   {
     name: "Donatello",
     breed: "Chartreux",
     sex: "mâle",
-    age: "8",
+    age: 8,
     localisation: "Cenon",
   },
   {
     name: "Leonardo",
-    breed: "Européen",
+    breed: "Chat européen",
     sex: "mâle",
-    age: "3",
+    age: 3,
     localisation: "Lormont",
   },
   {
     name: "Luigi",
-    breed: "Européen",
+    breed: "Chat européen",
     sex: "mâle",
-    age: "12",
-    localisation: "Begles",
+    age: 12,
+    localisation: "Bègles",
   },
   {
     name: "Mario",
-    breed: "Européen",
+    breed: "Chat européen",
     sex: "mâle",
-    age: "11",
-    localisation: "Begles",
+    age: 11,
+    localisation: "Bègles",
   },
   {
     name: "Michelangelo",
     breed: "Autre",
     sex: "mâle",
-    age: "5",
+    age: 5,
     localisation: "Floirac",
   },
   {
     name: "Nova",
     breed: "Himalayen",
     sex: "femelle",
-    age: "3",
+    age: 3,
     localisation: "Le Bouscat",
   },
   {
     name: "Raphaello",
     breed: "Siamois",
     sex: "mâle",
-    age: "1",
-    localisation: "Saint Medard",
+    age: 1,
+    localisation: "Saint Médard en Jalles",
   },
   {
     name: "Sacha",
     breed: "Himalayen",
     sex: "femelle",
-    age: "2",
+    age: 2,
     localisation: "Villenave d'Ornon",
   },
   {
     name: "Samba",
     breed: "Maine coon",
     sex: "femelle",
-    age: "6",
+    age: 6,
     localisation: "Bruges",
   },
   {
     name: "Spoutnik",
     breed: "Sacré de Birmanie",
     sex: "mâle",
-    age: "7",
+    age: 7,
     localisation: "Villenave d'Ornon",
   },
   {
     name: "Sveta",
     breed: "Maine coon",
     sex: "femelle",
-    age: "5",
+    age: 5,
     localisation: "Gradignan",
   },
   {
     name: "Warrio",
     breed: "Persan",
     sex: "mâle",
-    age: "2",
+    age: 2,
     localisation: "Bordeaux",
   },
   {
     name: "Koshka",
     breed: "Persan",
     sex: "femelle",
-    age: "10",
+    age: 10,
     localisation: "Autre",
   },
 ];
@@ -158,14 +158,13 @@ let sliderPosition = 0;
 //taille du container avec toutes les images
 container.style.width = 90 * catList.length + "vw";
 
-/**
- * Mets à jour la liste des chat avec les donnée fournies
- */
+//Mets à jour la liste des chat avec les données fournies
 function updateCatList() {
   container.innerHTML = "";
   sliderPosition = 0;
   container.style.transform = `translateX(0)`;
 
+  //Pour chaque chat on ajoute l'image correspondante
   for (const cat of filteredCatList) {
     const div = document.createElement("div");
     div.className = "photo";
@@ -179,6 +178,7 @@ function updateCatList() {
     div.dataset.age = cat.age;
     div.dataset.localisation = cat.localisation;
 
+    //Au click sur la photo du chat on affiche les infos
     div.addEventListener("click", function (event) {
       // event.target contient un référence vers l'élément du DOM
       // qui a lancé le click
@@ -193,8 +193,9 @@ function updateCatList() {
       ${cat.name}, ${cat.breed}, ${cat.sex}, ${cat.age}, ${cat.localisation}
       <img src="assets/cross.gif" class="cross">
     `;
-    div.appendChild(infos);
 
+    //On lie les éléments
+    div.appendChild(infos);
     container.appendChild(div);
 
     //Sélection de la croix pour fermer le bloc infos chats
@@ -250,14 +251,6 @@ function slide(direction = 1) {
 // Récupération du formulaire
 let formData = document.querySelector(".search");
 
-// Données mises dans un objet
-/*let formSearch = {
-  "region" : formRegion,
-  "breed" : formBreed,
-  "sex" : formSex,
-  "age" : formAge,
-}*/
-
 // Lors du click sur le bouton "recherche" on récupère les infos choisies
 catSearch = document
   .querySelector('[name="search_cats"]')
@@ -265,9 +258,9 @@ catSearch = document
     let formRegion = document.querySelector('[name="region"]').value;
     let formBreed = document.querySelector('[name="cats-breed"]').value;
     let formSex = document.querySelector('[name="cats-sex"]').value;
-
     let formAge = document.querySelector('[name="cats-age"]').value;
-    let [minAge, maxAge] = formAge.split("-").map((age) => parseInt(age)); // [10, 12]
+    //On transforme la tranche d'age sous forme de tableau avec 2 colonnes (age min et age max)
+    let [minAge, maxAge] = formAge.split("-").map((age) => parseInt(age)); // exemple [10, 12]
 
     console.log({ formRegion, formBreed, formSex, minAge, maxAge });
 
@@ -290,13 +283,6 @@ catSearch = document
 // filteredCatList = [...catList]
 // updateCatList()
 
-//reconstruction du carrousel avec les chats filtrés
-// for (i = 0; i < catListFiltered.length; i++) {
-//   const cat = catList[i];
-
-//   const div = document.createElement("div");
-//   div.className = "photo";
-//   div.style.backgroundImage = "url('./assets/Photos-chats/img" + i + ".jpg')";
 
 /**
  * Formulaire de recherche : au click sur le bouton "rechercher" (addEventListener)
