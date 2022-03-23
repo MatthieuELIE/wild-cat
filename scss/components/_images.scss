@@ -5,3 +5,21 @@
     display: inline-block;
     width: 90vw;
 }
+
+.sleeping_cat{
+    position: absolute;
+    height: 15vw;
+    top: -120px;
+}
+
+@media screen and (max-width: 1000px) {
+    .sleeping_cat{
+        top: -50px;
+    }    
+}
+
+@media screen and (max-width: 638px) {
+    .sleeping_cat{
+        top: -10px;
+    }    
+}
