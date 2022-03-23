@@ -270,7 +270,7 @@ catSearch = document
         cat.localisation === formRegion &&
         cat.breed === formBreed &&
         cat.sex === formSex &&
-        cat.age >= minAge &&
+        cat.age >= minAge && 
         cat.age <= maxAge
     );
 
@@ -279,7 +279,12 @@ catSearch = document
     updateCatList();
   });
 
-// Reset la liste de chat
+  resetButton = document.querySelector('[name="reset_cats"').addEventListener('click', function(event){
+    filteredCatList = [...catList];
+    updateCatList()
+  });
+
+// Reset la liste de chat reset_cats
 // filteredCatList = [...catList]
 // updateCatList()
 
