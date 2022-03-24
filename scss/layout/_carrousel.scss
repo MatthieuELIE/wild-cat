@@ -127,6 +127,24 @@ p {
   }  
 }
 
+@media screen and (max-width : 590px){
+  .adopt-your-cat{
+    background-position: 160% -4%;
+  }
+}
+
+@media screen and (max-width : 435px){
+  .adopt-your-cat{
+    background-position: 220% -4%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .adopt-your-cat {
+    background-position: 39vh -4%;
+  }
+} 
+
 @media screen and (max-width : 460px){
   .form_container {
     flex-direction: column;
