@@ -4,4 +4,10 @@ $color-tertiary: #f79256;
 $shadow-color: #2d3142;
 $color-border: #fff9a5;
 
+h1, h3, button {
+    font-family: $titlePolice;
+}
 
+p, a, input, textarea {
+    font-family: $textPolice;
+}

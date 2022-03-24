@@ -190,7 +190,7 @@ function updateCatList() {
     let infos = document.createElement("p");
     infos.className = "infos-chats";
     infos.innerHTML = `
-      ${cat.name}, ${cat.breed}, ${cat.sex}, ${cat.age}, ${cat.localisation}
+      ${cat.name}, race : ${cat.breed}, ${cat.sex}, ${cat.age} an(s), ${cat.localisation}
       <img src="assets/cross.gif" class="cross">
     `;
 
