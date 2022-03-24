@@ -259,8 +259,11 @@ let formData = document.querySelector(".search");
 
 // Lors du click sur le bouton "recherche" on récupère les infos choisies
 catSearch = document
-  .querySelector('[name="search_cats"]')
-  .addEventListener("click", function () {
+  .querySelector('form.search')
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    console.log("SUBMIT")
     let formRegion = document.querySelector('[name="region"]').value;
     let formBreed = document.querySelector('[name="cats-breed"]').value;
     let formSex = document.querySelector('[name="cats-sex"]').value;
@@ -279,8 +282,6 @@ catSearch = document
         cat.age >= minAge && 
         cat.age <= maxAge
     );
-
-    console.table(filteredCatList);
 
     updateCatList();
   });
