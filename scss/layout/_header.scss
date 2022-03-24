@@ -168,3 +168,21 @@ ul {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 638px) {
+  .sleeping_cat{
+      top: -10px;
+  }    
+
+  .logo {
+  width: 13vh;
+  height: 13vh;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .logo {
+  width: 13vh;
+  height: 13vh;
+  }
+}
