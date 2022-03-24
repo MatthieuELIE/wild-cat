@@ -19,8 +19,8 @@
   <nav class="navbar dark-mode" role="navigation">
     <img class="logo" src="./assets/logo.png" alt="chat dans les bras">
     <ul class="navbar__links">
-      <li class="navbar__link first"><a href="#">A propos</a></li>
-      <li class="navbar__link second"><a href="#adopt-your-cat">Adopte ton chat</a></li>
+      <li class="navbar__link first"><a href="#apropos">A propos</a></li>
+      <li class="navbar__link second"><a href="#recherche_ton_chat">Adopte ton chat</a></li>
       <li class="navbar__link third"><a href="#soutien">Soutiens ton association</a></li>
     <li class="navbar__link fifth"><a href="#contact">Contact</a></li>
     </ul>   
@@ -31,15 +31,15 @@
 
   <main>
 
-    <section id="apropos">
+    <section>
       <div class="a-propos" >
         <img src="assets/Bandeau.jpg" alt="Adopte un chat" />
-        <h3>Nous aidons les associations à se faire connaitre.</h3>
+        <h1>Nous aidons les associations à se faire connaitre.</h1>
       </div>
-      <div class="nous">
+      <div class="nous" id="apropos">
         <img src="./assets/about.png" alt="chat qui dort" class="sleeping_cat"/>
 
-        <h2>A propos de nous.</h2>
+        <h2>A propos de nous</h2>
 
         <p> Nous sommes un organisme qui aide à faire connaître les associations qui recueille les chats abandonnés ou errants dans la région Bordelaise et ses environs. Ces associations ont besoin d’aide pour pouvoir sauver un maximum de chats et
             aussi leur prodiguer des soins adaptés. L’objectif final est l’adoption des chats par une association, une vie heureuse dans un foyer aimant ! 
@@ -48,7 +48,9 @@
         </p>
       </div>
     </section>
-
+    <div id="recherche_ton_chat">
+      <!-- Div vide pour que le lien de la nav barre renvoie au dessus du titre h2. Si id="recherche_ton_chat" placée sur le h2, avec la header placé en position=fixed, le titre n'apparait pas.-->
+    </div>
     <section class="adopt-your-cat">
       <h2 class="adopt-section-title">Adopte ton chat !</h2>
       <form class="search">

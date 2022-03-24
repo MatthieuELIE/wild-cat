@@ -1289,7 +1289,7 @@ p {
 .carrousel {
   position: relative;
   width: 90vw;
-  height: 500px;
+  height: 90vh;
   margin: 100px auto;
   overflow: hidden;
 }
@@ -1299,6 +1299,7 @@ p {
 .carrousel .carrousel-container .photo p {
   position: absolute;
   display: none;
+  text-align: center;
 }
 .carrousel .carrousel-container .photo.visible p {
   color: #2d3142;
@@ -1511,13 +1512,14 @@ p {
   padding: 5%;
 }
 
-.a-propos h3 {
+.a-propos h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   position: absolute;
   top: 48%;
   left: 50%;
   font-size: 5vw;
   padding-right: 5%;
-  font-family: "Roboto", sans-serif;
   color: white;
 }
 
@@ -1531,6 +1533,10 @@ p {
   padding: 3em;
   margin-top: 20vh;
   position: relative;
+}
+.nous p {
+  text-align: justify;
+  line-height: 1.5;
 }
 
 .nous h2 {

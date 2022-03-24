@@ -60,7 +60,7 @@ p {
 .carrousel {
   position: relative;
   width: 90vw;
-  height: 500px;
+  height: 90vh;
   margin: 100px auto;
   overflow: hidden;
 
@@ -70,6 +70,7 @@ p {
     .photo p {
       position: absolute;
       display: none;
+      text-align: center;
     }
 
     .photo.visible {

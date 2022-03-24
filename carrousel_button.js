@@ -190,7 +190,7 @@ function updateCatList() {
     let infos = document.createElement("p");
     infos.className = "infos-chats";
     infos.innerHTML = `
-      ${cat.name}, race : ${cat.breed}, ${cat.sex}, ${cat.age} an(s), ${cat.localisation}
+      ${cat.name}, <br> Race : ${cat.breed}, <br>${cat.sex}, ${cat.age} an(s),<br> Hébergé(e) à ${cat.localisation}
       <img src="assets/cross.gif" class="cross">
     `;
 
@@ -205,6 +205,12 @@ function updateCatList() {
     closingCross.addEventListener("click", function () {
       // Au clic sur la croix, la fenêtre infos se ferme.
       div.classList.remove("visible");
+    });
+
+    document.body.addEventListener("keyup", function (event) {
+      if (event.key === "Escape") {
+        div.classList.remove("visible");
+      };  
     });
   }
 }
