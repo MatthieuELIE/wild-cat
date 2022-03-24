@@ -47,7 +47,7 @@ p {
 
     .form_container {
     @include flexSpaceAround;
-
+    flex-grow: 1;
       .search-block {
         @include flexColumn;
         align-items: center;
