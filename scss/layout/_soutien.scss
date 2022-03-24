@@ -25,39 +25,47 @@
   padding: 2vh 4vh;
   text-align: center;
 }
-.don {
+
+.card {
+  padding: 20px;
   margin-bottom: 20px;
   width: 250px;
   height: 230px;
   background-color: $color-primary;
   border-radius: 30px;
   text-align: center;
+
+  a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    margin-top: 10px;
+  }
 }
-.don p {
-  text-align: center;
-  font-family: roboto;
-  font-size: medium;
-  word-spacing: 0ch;
-  margin-top: 30px;
+
+.don {
+  p {
+    text-align: center;
+    font-family: roboto;
+    font-size: medium;
+  }
 }
 
 .charity {
-  width: 250px;
-  height: 230px;
-  background-color: $color-primary;
-  border-radius: 30px;
-  text-align: center;
   margin-bottom: 5vh;
 }
 
 .btn-charity {
+  display: inline-block;
   background-color: $color-secondary;
   color: #ffff;
   width: 150px;
   height: 50px;
   border-radius: 8px;
   margin-top: 2rem;
+  text-decoration: none;
 }
+
 .btn-don {
   background-color: $color-secondary;
   color: #ffff;
