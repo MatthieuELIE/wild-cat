@@ -15,15 +15,14 @@
   display: flex;
   color: $color-secondary;
   justify-content: center;
-  background-color: $color-primary;
+  background-color: white;
   border: 1px solid $color-secondary;
   border-radius: 8px;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.43);
-  width: 50%;
   height: 80px;
   align-items: center;
-  margin: auto;
-  padding: auto;
+  margin: 5vh auto;
+  padding: 2vh 4vh;
   text-align: center;
 }
 .don {
@@ -48,6 +47,7 @@
   background-color: $color-primary;
   border-radius: 30px;
   text-align: center;
+  margin-bottom: 5vh;
 }
 
 .btn-charity {
@@ -81,7 +81,7 @@
   .charity {
     display: flex;
     width: 50%;
-    margin: auto;
+   /* margin: auto;*/
     padding: auto;
     text-align: center;
     flex-direction: column;

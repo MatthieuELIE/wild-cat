@@ -3,15 +3,12 @@ ul {
 }
 
 .logo {
-  position: fixed;
-  width: 18vh;
-  height: 18vh;
-  margin-top: 0.3rem;
+  width: auto;
+  height: 150%;
+  margin-top: 0rem;
   margin-left: 10px;
   border: 1px solid $color-secondary;
   border-radius: 50%;
-  top: 15px;
-  z-index: 100;
 }
 
 /* Navbar */
@@ -19,12 +16,12 @@ ul {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
   padding: 10px;
   font-size: 1.1rem;
   z-index: 99;
   background-color: #8dc9d6;
-  height: 13vh;
+  height: 6vh;
   position: fixed;
   width: 100%;
   top: 0px;
@@ -175,14 +172,14 @@ ul {
   }    
 
   .logo {
-  width: 13vh;
-  height: 13vh;
+  width: 7vh;
+  height: 7vh;
   }
 }
 
 @media screen and (max-width: 420px) {
   .logo {
-  width: 13vh;
-  height: 13vh;
+  width: 7vh;
+  height: 7vh;
   }
 }

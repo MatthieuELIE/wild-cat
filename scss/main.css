@@ -350,6 +350,14 @@ template {
   display: none;
 }
 
+h1, h3, button {
+  font-family: "Boogaloo", "cursive";
+}
+
+p, a, input, textarea {
+  font-family: "Roboto", sans-serif;
+}
+
 .search-button {
   display: flex;
   flex-direction: column;
@@ -914,27 +922,24 @@ ul {
 }
 
 .logo {
-  position: fixed;
-  width: 18vh;
-  height: 18vh;
-  margin-top: 0.3rem;
+  width: auto;
+  height: 150%;
+  margin-top: 0rem;
   margin-left: 10px;
   border: 1px solid #1d4e89;
   border-radius: 50%;
-  top: 15px;
-  z-index: 100;
 }
 
 /* Navbar */
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
   padding: 10px;
   font-size: 1.1rem;
   z-index: 99;
   background-color: #8dc9d6;
-  height: 13vh;
+  height: 6vh;
   position: fixed;
   width: 100%;
   top: 0px;
@@ -1100,16 +1105,20 @@ ul {
   }
 
   .logo {
-    width: 13vh;
-    height: 13vh;
+    width: 7vh;
+    height: 7vh;
   }
 }
 @media screen and (max-width: 420px) {
   .logo {
-    width: 13vh;
-    height: 13vh;
+    width: 7vh;
+    height: 7vh;
   }
 }
+* {
+  scroll-behavior: smooth;
+}
+
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -1173,6 +1182,7 @@ ul {
   padding: 0 1rem;
   letter-spacing: 0.01rem;
   color: #1d4e89;
+  font-weight: 700;
 }
 
 .contact-list ul li:hover {
@@ -1408,6 +1418,7 @@ p {
   outline: none;
   border: none;
   border-bottom: 2px solid #1d4e89;
+  font-weight: 700;
 }
 
 .form-box input:focus, .form-box textarea:focus {
@@ -1420,14 +1431,17 @@ p {
 
 .form-box input:focus::-moz-placeholder, .form-box textarea:focus::-moz-placeholder {
   color: #1d4e89;
+  font-weight: 700;
 }
 
 .form-box input:focus:-ms-input-placeholder, .form-box textarea:focus:-ms-input-placeholder {
   color: #1d4e89;
+  font-weight: 700;
 }
 
 .form-box input:focus::placeholder, .form-box textarea:focus::placeholder {
   color: #1d4e89;
+  font-weight: 700;
 }
 
 .form-box input::-moz-placeholder, .form-box textarea::-moz-placeholder {
@@ -1537,15 +1551,14 @@ p {
   display: flex;
   color: #1d4e89;
   justify-content: center;
-  background-color: #8dc9d6;
+  background-color: white;
   border: 1px solid #1d4e89;
   border-radius: 8px;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.43);
-  width: 50%;
   height: 80px;
   align-items: center;
-  margin: auto;
-  padding: auto;
+  margin: 5vh auto;
+  padding: 2vh 4vh;
   text-align: center;
 }
 
@@ -1572,6 +1585,7 @@ p {
   background-color: #8dc9d6;
   border-radius: 30px;
   text-align: center;
+  margin-bottom: 5vh;
 }
 
 .btn-charity {
@@ -1608,7 +1622,7 @@ p {
   .charity {
     display: flex;
     width: 50%;
-    margin: auto;
+    /* margin: auto;*/
     padding: auto;
     text-align: center;
     flex-direction: column;
