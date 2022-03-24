@@ -11,6 +11,8 @@ git clone git@github.com:MatthieuELIE/wild-cat.git
 Ne pas travailler directement sur la main.
 Pensez bien à créer une branche secondaire afin d'effectuer vos modifications.
 
+Lien du Github Pages : https://matthieuelie.github.io/wild-cat/
+
 Lien du Trello : 
 https://trello.com/b/TFaVOqyx/r%C3%A9partitions-des-mission-du-projet-adopte-un-chat
 

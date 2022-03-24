@@ -3,12 +3,12 @@ ul {
 }
 
 .logo {
-  width: 8vh;
-  height: 8vh;
-  float: left;
-  margin-top: 0.3rem;
+  width: auto;
+  height: 150%;
+  margin-top: 0rem;
   margin-left: 10px;
-  top: 2;
+  border: 1px solid $color-secondary;
+  border-radius: 50%;
 }
 
 /* Navbar */
@@ -21,16 +21,24 @@ ul {
   font-size: 1.1rem;
   z-index: 99;
   background-color: #8dc9d6;
+  height: 6vh;
+  position: fixed;
+  width: 100%;
+  top: 0px;
 }
 .navbar__links {
   display: flex;
 }
 .navbar__link {
   padding: 0 10px;
+
 }
 .navbar__link > a {
   color: black;
   text-decoration: none;
+  font-family: $textPolice;
+  font-weight: 700;
+
 }
 .burger {
   display: none;
@@ -155,5 +163,23 @@ ul {
 
   .navbar__link:hover > a::after {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 638px) {
+  .sleeping_cat{
+      top: -10px;
+  }    
+
+  .logo {
+  width: 7vh;
+  height: 7vh;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .logo {
+  width: 7vh;
+  height: 7vh;
   }
 }

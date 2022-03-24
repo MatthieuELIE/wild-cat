@@ -5,26 +5,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wild Cat</title>
-
+  <title>Adopte ton chat</title>
   <link rel="stylesheet" href="./scss/main.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Tienne:wght@400;700;900&family=Work+Sans:wght@100;400;700;800&display=swap"
-    rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Tienne:wght@400;700;900&family=Work+Sans:wght@100;400;700;800&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/bcabde0407.js" crossorigin="anonymous"></script>
-</head>
+  <link rel="icon" href="assets/icon.png" type="image/png"></head>
 
 <body>
   <!-------HEADER-->
   <nav class="navbar dark-mode" role="navigation">
-    <div class="navbar__logo"><img class="logo" src="./assets/logo.png"></div>    
+    <img class="logo" src="./assets/logo.png" alt="chat dans les bras">
     <ul class="navbar__links">
-      <li class="navbar__link first"><a href="#">A propos</a></li>
-      <li class="navbar__link second"><a href="#adopt-your-cat">Adopte ton chat</a></li>
+      <li class="navbar__link first"><a href="#apropos">A propos</a></li>
+      <li class="navbar__link second"><a href="#recherche_ton_chat">Adopte ton chat</a></li>
       <li class="navbar__link third"><a href="#soutien">Soutiens ton association</a></li>
     <li class="navbar__link fifth"><a href="#contact">Contact</a></li>
     </ul>   
@@ -38,14 +34,15 @@
       <h1>Adopte un chat !</h1>
     </section>
 
-    <section id="apropos">
+    <section>
       <div class="a-propos" >
         <img src="assets/Bandeau.jpg" alt="Adopte un chat" />
-        <h3>Nous aidons les associations à se faire connaitre.</h3>
+        <h1>Nous aidons les associations à se faire connaitre.</h1>
       </div>
-      <div class="nous">
+      <div class="nous" id="apropos">
+        <img src="./assets/about.png" alt="chat qui dort" class="sleeping_cat"/>
 
-        <h2>A propos de nous.</h2>
+        <h2>A propos de nous</h2>
 
         <p> Nous sommes un organisme qui aide à faire connaître les associations qui recueille les chats abandonnés ou errants dans la région Bordelaise et ses environs. Ces associations ont besoin d’aide pour pouvoir sauver un maximum de chats et
             aussi leur prodiguer des soins adaptés. L’objectif final est l’adoption des chats par une association, une vie heureuse dans un foyer aimant ! 
@@ -54,60 +51,63 @@
         </p>
       </div>
     </section>
-
+    <div id="recherche_ton_chat">
+      <!-- Div vide pour que le lien de la nav barre renvoie au dessus du titre h2. Si id="recherche_ton_chat" placée sur le h2, avec la header placé en position=fixed, le titre n'apparait pas.-->
+    </div>
     <section class="adopt-your-cat">
       <h2 class="adopt-section-title">Adopte ton chat !</h2>
       <form class="search">
         <div class="form_container">
           <div class="search-block">
             <label for="location"> Localisation </label>
-            <select name="region" id="location">
+            <select name="region" id="location" class="select_field">
               <option value="">Choisissez une région</option>
               <option value="Bordeaux">Bordeaux</option>
               <option value="Pessac">Pessac</option>
               <option value="Talence">Talence</option>
               <option value="Gradignan">Gradignan</option>
-              <option value="Begles">Bègles</option>
+              <option value="Bègles">Bègles</option>
               <option value="Villenave d'Ornon">Villenave d'Ornon</option>
               <option value="Floirac">Floirac</option>
               <option value="Cenon">Cenon</option>
               <option value="Lormont">Lormont</option>
-              <option value="Saint Medard en Jalles">Saint Médard en Jalles</option>
+              <option value="Saint Médard en Jalles">Saint Médard en Jalles</option>
               <option value="Blanquefort">Blanquefort</option>
               <option value="Eysines">Eysines</option>
               <option value="Bruges">Bruges</option>
+              <option value="Mérignac">Mérignac</option>
               <option value="Autre">Autre</option>
             </select>
           </div>
           <div class="search-block">
-            <label for="cats-race"> Race </label>
-            <select name="cats-race" id="cat-race">
+            <label for="cats-breed"> Race </label>
+            <select name="cats-breed" id="cats-breed" class="select_field">
               <option value="">Choisissez une race</option>
               <option value="Bengale">Bengale</option>
               <option value="Balinais">Balinais</option>
               <option value="Chartreux">Chartreux</option>
-              <option value="Chat europeen">Chat européen</option>
+              <option value="Chat européen">Chat européen</option>
               <option value="Himalayen">Himalayen</option>
               <option value="Maine Coon">Maine Coon</option>
               <option value="Persan">Persan</option>
-              <option value="Sacre de Birmanie">Sacré de Birmanie</option>
+              <option value="Sacré de Birmanie">Sacré de Birmanie</option>
               <option value="Siamois">Siamois</option>
-              <option value="Siberien">Sibérien</option>
+              <option value="Sibérien">Sibérien</option>
               <option value="Sphynx">Sphynx</option>
               <option value="Autre">Autre</option>
             </select>
           </div>
           <div class="search-block">
             <label for="sex"> Sexe </label>
-            <select name="cats-sex" id="sex">
+            <select name="cats-sex" id="sex" class="select_field">
               <option value="">Choisissez un sexe</option>
-              <option value="Male">Mâle</option>
-              <option value="Femelle">Femelle</option>
+              <option value="mâle">Mâle</option>
+              <option value="femelle">Femelle</option>
             </select>
           </div>
           <div class="search-block">
             <label for="cat-age"> Age </label>
-            <select name="cats-age" id="cat-age">
+            <select name="cats-age" id="cat-age" class="select_field">
               <option value="">Choisissez une tranche d'âge</option>
               <option value="0-1">0-1 an</option>
               <option value="2-3">2-3 ans</option>
@@ -115,13 +115,19 @@
               <option value="7-9">7-9 ans</option>
               <option value="10-12">10-12 ans</option>
               <option value="12-14">12-14 ans</option>
-              <option value="+14">+14 ans</option>
+              <option value="14-20">+14 ans</option>
             </select>
           </div>
         </div>
-        <div class="button-container-2">
-          <span class="mas">ton chat...</span>
-          <button type="button" name="search_cats">Adopte</button>
+        <div class="search_buttons_block">
+          <div class="button-container-2">
+            <span class="mas">ton chat...</span>
+            <button type="button" name="search_cats">Adopte</button>
+          </div>
+          <div class="button-container-2">
+            <span class="mas">la liste de chats...</span>
+            <button type="button" name="reset_cats">Réinitialiser</button>
+          </div>
         </div>
       </form>
 
@@ -130,25 +136,25 @@
           <!--Div qui contient les images du carrousel-->
           <div class="carrousel-container"></div>
           <!--<img src="assets/Photos-chats/Dominika.jpg" alt="chat noir et blanc couché dans un tube recouvert de tissu" class="slider-img" name="slide">-->
-          <img src="assets/previous.png" class="btn-g" />
-          <img src="assets/previous.png" class="btn-d" />
+          <img src="assets/previous.png" class="btn-g" alt="fleche à gauche"/>
+          <img src="assets/previous.png" class="btn-d" alt="fleche à droite" />
         </div>
       </div>
     </section>
 <!---SOUTIENS TON ASSO-->
     <section id="soutien" class="soutien-section"> 
      
-      <h1>soutiens ton association</h1> 
       <div class="donation">
+        <h1>Soutiens ton association</h1> 
         <div class="don">
           <p><strong>Dépuis notre site vous pouvez soutenir l'association de votre choix</strong></p>
           <form action="https://www.paypal.com/fr/home/">
-            <button  id="don-charity"class="btn-don">faire un don</button>
+            <button  id="don-charity" class="btn-don">faire un don</button>
           </form>
         </div>
         <div class="charity">
           <label  id="label-charity" for="charity">choisissez votre association </label>
-          <select name ="association" id=form-association>
+          <select name ="association" id=charity>
             <option value="aidAnimaux33">choisissez votre association</option>
             <option value="aidAnimaux33">AidAnimaux33</option>
             <option value="vénus Association">Vénus Association</option>
@@ -190,13 +196,14 @@
 
       <div class="form-container">
         <h2>Nous contacter :</h2>
-        <form class="form-box">
-          <input type="text" name="lastName" placeholder="Nom" class="last-name">
-          <input type="text" name="firstName" placeholder="Prénom" class="first-name">
-          <input type="text" name="phoneNumber" placeholder="Téléphone" class="phone">
-          <input type="email" name="email" placeholder="Email" class="email">
-          <textarea name="form-message" class="form-message" placeholder="Entrez votre message ici..."></textarea>
+        <form class="form-box" id="form">
+          <input type="text" id="formLastName" placeholder="Nom" class="last-name">
+          <input type="text" id="formFirstName" placeholder="Prénom" class="first-name">
+          <input type="text" id="formPhone" placeholder="Téléphone" class="phone">
+          <input type="email" id="formEmail" placeholder="Email" class="email">
+          <textarea id="formMessage" class="form-message" placeholder="Entrez votre message ici..."></textarea>
         </form>
+        <button id="formButton" class="form-btn" type="submit" disabled>Envoyer</button>
       </div>
 
 
@@ -231,19 +238,12 @@
       </div>
 
     </div>
-
-    </div>
-
-    <!------
-  
-
-    <img class="picture" src="./assets/social_network.png">
-    ---->
   </footer>
 
   <script src="header.js"></script>
   <script src="carrousel_button.js"></script>
   <script src="infos-chats.js"></script>
+  <script src="form.js"></script>
 
 </body>
 

@@ -8,6 +8,7 @@ label{
   font-size: 1rem;
   font-family: $subtitlePolice;
   line-height: 30px;
+  font-weight: bolder;
 }
 select {
   font-family: $subtitlePolice; /*!important; /*Normalize empêche la prise en compte*/
@@ -20,6 +21,7 @@ p {
 
 p {
   font-family: $textPolice;
+  font-weight: 700;
 }
 
 .adopt-your-cat {
@@ -58,7 +60,7 @@ p {
 .carrousel {
   position: relative;
   width: 90vw;
-  height: 500px;
+  height: 90vh;
   margin: 100px auto;
   overflow: hidden;
 
@@ -68,6 +70,7 @@ p {
     .photo p {
       position: absolute;
       display: none;
+      text-align: center;
     }
 
     .photo.visible {
@@ -106,10 +109,18 @@ p {
   }
 }
 
+.select_field {
+  width: 100%;
+}
+
 @media screen and (max-width: 962px) {
 
   .form_container {
     flex-direction: column;
+  }
+
+  .select_field {
+    width: 50%;
   }
 }
 
@@ -120,7 +131,11 @@ p {
     width: 50%;
     margin: 0 auto;
     padding: 10px;
-    min-width: 250px;
+    min-width: 200px;
     border: 1px solid $color-secondary;
+  }
+
+  .select_field {
+    width: 75%;
   }
 }
