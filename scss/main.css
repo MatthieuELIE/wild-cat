@@ -1289,7 +1289,7 @@ p {
 .carrousel {
   position: relative;
   width: 90vw;
-  height: 500px;
+  height: 90vh;
   margin: 100px auto;
   overflow: hidden;
 }
@@ -1299,6 +1299,7 @@ p {
 .carrousel .carrousel-container .photo p {
   position: absolute;
   display: none;
+  text-align: center;
 }
 .carrousel .carrousel-container .photo.visible p {
   color: #2d3142;
@@ -1512,8 +1513,8 @@ p {
 }
 
 .a-propos h1 {
-  font-family: "Boogaloo", "cursive";
-  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   position: absolute;
   top: 48%;
   left: 50%;
