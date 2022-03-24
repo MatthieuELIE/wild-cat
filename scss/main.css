@@ -426,6 +426,9 @@ select {
     flex-direction: column;
     align-items: center;
   }
+  .search_buttons_block div {
+    margin-top: 4vh;
+  }
 }
 .photo {
   background-size: cover;
@@ -506,7 +509,7 @@ select {
   height: 50px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 10vh;
+  margin-top: 5vh;
   overflow: hidden;
   border: 1px solid #000;
   font-family: "Lato", sans-serif;
