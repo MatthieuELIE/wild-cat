@@ -89,7 +89,7 @@
   .charity {
     display: flex;
     width: 50%;
-   /* margin: auto;*/
+    /* margin: auto;*/
     padding: auto;
     text-align: center;
     flex-direction: column;
@@ -111,4 +111,9 @@
   .btn-don {
     margin-top: 60px;
   }
+}
+
+.association-external-links a {
+  font-size: 0.8rem;
+  font-family: $subtitlePolice;
 }
