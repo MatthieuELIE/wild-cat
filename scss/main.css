@@ -354,21 +354,6 @@ template {
   display: none;
 }
 
-<<<<<<< HEAD
-.search-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-=======
 .d-none {
   display: none;
 }
@@ -398,7 +383,6 @@ p, a, input, textarea {
           align-items: center;
 }
 
->>>>>>> 87c6fbd18d21a8057240fad246b38a5aa48a7ed1
 .search-button button {
   margin-top: 20px;
   -webkit-box-shadow: 2px 2px 10px #2d3142;
@@ -536,51 +520,6 @@ select {
 
 /* Button 1
  .button-container-1 {
-<<<<<<< HEAD
-  position: relative;
-  width: 100px;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 6vh;
-  overflow: hidden;
-  border: 1px solid;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  transition: 0.5s;
-  letter-spacing: 1px;
-   border-radius: 8px;
- 
-  button {
-   width: 101%;
-   height: 100%;
-   font-family: 'Lato', sans-serif;
-   font-weight: 300;
-   font-size: 11px;
-   letter-spacing: 1px;
-   font-weight: bold;
- 
-   @include button(#000,
-   "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png",
-   2300%,
-   100%,
-   none,
-   #fff);
-   cursor: pointer;
-   -webkit-animation: ani2 0.7s steps(22) forwards;
-   animation: ani2 0.7s steps(22) forwards;
- 
-   &:hover {
-    -webkit-animation: ani 0.7s steps(22) forwards;
-    animation: ani 0.7s steps(22) forwards;
-   }
-  }
- }
- */
-.button-container-2 {
-=======
->>>>>>> 87c6fbd18d21a8057240fad246b38a5aa48a7ed1
   position: relative;
   width: 100px;
   height: 50px;
@@ -879,16 +818,6 @@ a {
 
 /*****FOOTER$*****/
 .footer {
-<<<<<<< HEAD
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  height: 100px;
-  background: #8DC9D6;
-  color: black;
-  font-size: 1rem;
-  z-index: 1000;
-=======
   width: 100%;
   background-color: #8DC9D6;
   text-align: center;
@@ -896,22 +825,15 @@ a {
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
->>>>>>> 87c6fbd18d21a8057240fad246b38a5aa48a7ed1
 }
 
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 100px;
-=======
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
->>>>>>> 87c6fbd18d21a8057240fad246b38a5aa48a7ed1
 }
 
 .footer-col h4 {
@@ -937,11 +859,7 @@ a {
   color: black;
   text-transform: capitalize;
   text-decoration: none;
-<<<<<<< HEAD
-  font-weight: 300;
-=======
   font-weight: 700;
->>>>>>> 87c6fbd18d21a8057240fad246b38a5aa48a7ed1
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -967,22 +885,12 @@ a {
   transition: all 0.3s ease;
 }
 
-<<<<<<< HEAD
 .social-media-links a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-=======
-.titi a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
->>>>>>> 87c6fbd18d21a8057240fad246b38a5aa48a7ed1
   margin-bottom: 100px;
 }
 
@@ -990,7 +898,6 @@ a {
   bottom: 50px;
 }
 
-<<<<<<< HEAD
 @media screen and (max-with: 600px) {
   .footer {
     width: 100%;
@@ -1003,119 +910,6 @@ a {
   }
 }
 
-=======
-/*** responsive**/
-/**@media screen and  (max-width:767px){
-    .footer-col{
-        display: inline-block;
-        width:100%;
-        margin: 20px;
-        
-        
-       
-    }
-
-}
-**/
-@media screen and (max-width: 800px) {
-  .footer-coll {
-    width: 75%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-  }
-}
-
-/***.footer{
-
-    position:absolute;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background-color: #8DC9D6;
-    text-align: center;
-    display: block;
-    color: black;
-    font-size: 1rem;
-   
-
-
-}
-.picture{
-   
-    width: 100px;
-    height:50px;
-    top:2px
-    
-   
-   
-}
-
-.titi{
-margin:1px;
-top:50px;
-animation-duration: 2s;
-animation-name: glissement;
-animation-iteration-count:2;
-}
-@keyframes glissement {
-from {
-margin-right: 100%;
-width: 300%;
-}
-
-to {
-margin-right: 0%;
-width: 100%;
-}
-
-}
-.mention{
-    list-style-type: none;
-    text-decoration: none;
-    
-}
-
-
-.toto{
-    font-size: 1rem;
-    animation-duration: 2s;
-    animation-name: glissement;
-    animation-iteration-count:1;
-}
-@keyframes glissement {
-    from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-
-}
-
-@media all and(max-with:600px) {
-    footer{
-        display: initial;
-        justify-content: center;
-        font-size: 1rem;
-      
-    }
-    .titi{ 
-    justify-content: center;
-
-    }
-    
-}
-*/
->>>>>>> 87c6fbd18d21a8057240fad246b38a5aa48a7ed1
 ul {
   list-style: none;
 }
@@ -1313,8 +1107,6 @@ ul {
   }
 }
 
-<<<<<<< HEAD
-=======
 @media screen and (max-width: 638px) {
   .sleeping_cat {
     top: -10px;
@@ -1336,7 +1128,6 @@ ul {
   scroll-behavior: smooth;
 }
 
->>>>>>> 87c6fbd18d21a8057240fad246b38a5aa48a7ed1
 .contact-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1495,12 +1286,6 @@ p {
 }
 
 .adopt-your-cat .search {
-<<<<<<< HEAD
-  /*@include flexSpaceAround;*/
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 80%;
-=======
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1510,7 +1295,6 @@ p {
       -ms-flex-align: center;
           align-items: center;
   width: 90vw;
->>>>>>> 87c6fbd18d21a8057240fad246b38a5aa48a7ed1
   color: #2d3142;
   margin: 23vh auto auto;
   background-color: #8dc9d6;
@@ -1525,14 +1309,9 @@ p {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-<<<<<<< HEAD
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-=======
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
->>>>>>> 87c6fbd18d21a8057240fad246b38a5aa48a7ed1
 }
 
 .adopt-your-cat .search .form_container .search-block {
@@ -1617,17 +1396,12 @@ p {
   height: 600px;
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 962px) {
-  .form_container {
-=======
 .select_field {
   width: 100%;
 }
 
 @media screen and (max-width: 788px) {
   .search {
->>>>>>> 87c6fbd18d21a8057240fad246b38a5aa48a7ed1
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1635,19 +1409,6 @@ p {
   }
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 850px) {
-  .form_container {
-    background-color: #8dc9d6;
-    width: 50%;
-    margin: 0 auto;
-    padding: 10px;
-    min-width: 250px;
-    border: 1px solid #1d4e89;
-  }
-}
-
-=======
 @media screen and (max-width: 590px) {
   .adopt-your-cat {
     background-position: 160% -4%;
@@ -1678,7 +1439,6 @@ p {
   }
 }
 
->>>>>>> 87c6fbd18d21a8057240fad246b38a5aa48a7ed1
 .form-container {
   width: 90%;
   margin: 3.5rem 0 8rem 0;
@@ -1792,10 +1552,6 @@ p {
 .form-box input:focus::-ms-input-placeholder, .form-box textarea:focus::-ms-input-placeholder {
   color: #1d4e89;
   font-weight: 700;
-}
-
-.form-box input:focus::-ms-input-placeholder, .form-box textarea:focus::-ms-input-placeholder {
-  color: #1d4e89;
 }
 
 .form-box input:focus::placeholder, .form-box textarea:focus::placeholder {
@@ -1955,12 +1711,7 @@ p {
   border-radius: 8px;
   -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.43);
           box-shadow: 0 0 1rem rgba(0, 0, 0, 0.43);
-<<<<<<< HEAD
-  width: 50%;
-  height: 14vh;
-=======
   height: 80px;
->>>>>>> 87c6fbd18d21a8057240fad246b38a5aa48a7ed1
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2064,12 +1815,9 @@ p {
     margin-top: 60px;
   }
 }
-<<<<<<< HEAD
-=======
 
 .association-external-links a {
   font-size: 0.8rem;
   font-family: "Tienne", sans-serif;
 }
->>>>>>> 87c6fbd18d21a8057240fad246b38a5aa48a7ed1
 /*# sourceMappingURL=main.css.map */
