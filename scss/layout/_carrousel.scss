@@ -44,6 +44,7 @@ p {
     background-color: $color-primary;
     /*background-color: $color-primary;*/
     padding: 20px;
+    border-radius: 10px 10px 0 ;
 
     .form_container {
     @include flexSpaceAround;
