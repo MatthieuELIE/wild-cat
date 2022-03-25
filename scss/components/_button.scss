@@ -58,3 +58,27 @@ select {
         transition: all 0.3s ease;
     }
 }
+
+.search_buttons_block {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 850px) {
+
+    .search_buttons_block {
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 788px) {
+      div {
+    margin-top: 4vh;
+    }
+  }
+  @media screen and (max-width : 300px){
+    .search_buttons_block {
+      flex-direction: column;
+    }
+  }
+  

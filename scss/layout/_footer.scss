@@ -2,18 +2,16 @@
 
 
 .footer{
-
-    
-    position:absolute;
     width: 100%;
+    background-color: #8DC9D6;
     text-align: center;
-    height: 100px;
-    background: #8DC9D6;
     color: black;
-    font-size: 1rem; 
-    z-index: 1000;
-
+    font-size: 1rem;
+    font-family: $textPolice;
+    font-weight: 700;
 }
+
+
     
   .row{
     display: flex;
@@ -28,7 +26,7 @@
     font-size: 18px;
     text-transform: capitalize;
     margin-top: 40px;
-    font-weight: 500;
+    font-weight: 700;
     position: relative;
    
   }
@@ -49,7 +47,7 @@
     color: black;
     text-transform:capitalize;
     text-decoration:none;
-    font-weight:300;
+    font-weight:700;
     transition:all 0.3s ease ;
   
   }

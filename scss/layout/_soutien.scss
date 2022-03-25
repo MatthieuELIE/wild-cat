@@ -15,49 +15,57 @@
   display: flex;
   color: $color-secondary;
   justify-content: center;
-  background-color: $color-primary;
+  background-color: white;
   border: 1px solid $color-secondary;
   border-radius: 8px;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.43);
-  width: 50%;
-  height: 14vh;
+  height: 80px;
   align-items: center;
-  margin: auto;
-  padding: auto;
+  margin: 5vh auto;
+  padding: 2vh 4vh;
   text-align: center;
 }
-.don {
+
+.card {
+  padding: 20px;
   margin-bottom: 20px;
   width: 250px;
   height: 230px;
   background-color: $color-primary;
   border-radius: 30px;
   text-align: center;
+
+  a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    margin-top: 10px;
+  }
 }
-.don p {
-  text-align: center;
-  font-family: roboto;
-  font-size: medium;
-  word-spacing: 0ch;
-  margin-top: 30px;
+
+.don {
+  p {
+    text-align: center;
+    font-family: roboto;
+    font-size: medium;
+  }
 }
 
 .charity {
-  width: 250px;
-  height: 230px;
-  background-color: $color-primary;
-  border-radius: 30px;
-  text-align: center;
+  margin-bottom: 5vh;
 }
 
 .btn-charity {
+  display: inline-block;
   background-color: $color-secondary;
   color: #ffff;
   width: 150px;
   height: 50px;
   border-radius: 8px;
   margin-top: 2rem;
+  text-decoration: none;
 }
+
 .btn-don {
   background-color: $color-secondary;
   color: #ffff;
@@ -83,7 +91,7 @@
   .charity {
     display: flex;
     width: 50%;
-    margin: auto;
+    /* margin: auto;*/
     padding: auto;
     text-align: center;
     flex-direction: column;
@@ -105,4 +113,9 @@
   .btn-don {
     margin-top: 60px;
   }
+}
+
+.association-external-links a {
+  font-size: 0.8rem;
+  font-family: $subtitlePolice;
 }
