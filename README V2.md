@@ -28,9 +28,9 @@ Le site regroupe certaines associations Bordelaises et propose de lister les cha
 
 Technologie web :
 
--	Maquette du site.
--	Le site web correspond à la maquette.
--	Le site web comprend 4 à 6 pages ou sections.
+-   Maquette du site.
+-   Le site web correspond à la maquette.
+-   Le site web comprend 4 à 6 pages ou sections.
 -   Passage au validateur sans erreurs.
 -   Le code est disponible depuis GitHub.
 -   Utilisation du HTML sémantique.

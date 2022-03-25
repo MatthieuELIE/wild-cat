@@ -67,11 +67,18 @@ select {
 @media screen and (max-width: 850px) {
 
     .search_buttons_block {
-      flex-direction: column;
       align-items: center;
-
-      div {
-        margin-top: 4vh;
-      }
     }
   }
+
+  @media screen and (max-width: 788px) {
+      div {
+    margin-top: 4vh;
+    }
+  }
+  @media screen and (max-width : 300px){
+    .search_buttons_block {
+      flex-direction: column;
+    }
+  }
+  

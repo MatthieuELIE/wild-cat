@@ -28,30 +28,39 @@ p {
   background-image: url("../../assets/card.png");
   background-repeat: no-repeat;
   background-size: 300px;
-  background-position: 75% 0%;
+  background-position: 105% -4%;;
 
   .adopt-section-title {
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 17vh;
   }
 
   .search {
-    /*@include flexSpaceAround;*/
-    flex-wrap: wrap;
-    width: 80%;
+    @include flexSpaceAround;
+    align-items: center;
+    width: 90vw;
     color: $shadow-color;
-    margin: 20vh auto auto;
+    margin: 23vh auto auto;
+    background-color: $color-primary;
     /*background-color: $color-primary;*/
     padding: 20px;
+    border-radius: 10px 10px 0 ;
 
     .form_container {
     @include flexSpaceAround;
-    flex-wrap: wrap;
-
+    flex-grow: 1;
       .search-block {
         @include flexColumn;
         align-items: center;
         margin: 0px 10px;
+
+        label {
+          display: none;
+        }
+
+          select {
+            border: none;
+          }
       }
     }
   }
@@ -61,7 +70,7 @@ p {
   position: relative;
   width: 90vw;
   height: 90vh;
-  margin: 100px auto;
+  margin: 0 auto;
   overflow: hidden;
 
   .carrousel-container {
@@ -113,29 +122,37 @@ p {
   width: 100%;
 }
 
-@media screen and (max-width: 962px) {
+@media screen and (max-width : 788px){
+  .search {
+    flex-direction: column;
+  }  
+}
 
+@media screen and (max-width : 590px){
+  .adopt-your-cat{
+    background-position: 160% -4%;
+  }
+}
+
+@media screen and (max-width : 435px){
+  .adopt-your-cat{
+    background-position: 220% -4%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .adopt-your-cat {
+    background-position: 39vh -4%;
+  }
+} 
+
+@media screen and (max-width : 460px){
   .form_container {
     flex-direction: column;
-  }
 
-  .select_field {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 850px) {
-
-  .form_container {
-    background-color: $color-primary;
-    width: 50%;
-    margin: 0 auto;
-    padding: 10px;
-    min-width: 200px;
-    border: 1px solid $color-secondary;
-  }
-
-  .select_field {
-    width: 75%;
+    select{
+      margin: 10px auto;
+    }
   }
 }
+
