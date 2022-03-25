@@ -20,11 +20,12 @@
 
 <body>
   <!-------HEADER-->
+  
   <nav class="navbar dark-mode" role="navigation">
     <div class="navbar__logo"><img class="logo" src="./assets/logo.png"></div>    
     <ul class="navbar__links">
-      <li class="navbar__link first"><a href="#">A propos</a></li>
-      <li class="navbar__link second"><a href="#adopt-your-cat">Adopte ton chat</a></li>
+      <li class="navbar__link first"><a href="#home">A propos</a></li>
+      <li class="navbar__link second"><a href="#adopt-cat">Adopte ton chat</a></li>
       <li class="navbar__link third"><a href="#soutien">Soutiens ton association</a></li>
     <li class="navbar__link fifth"><a href="#contact">Contact</a></li>
     </ul>   
@@ -33,9 +34,10 @@
     </button>   
   </nav>
 
+
   <main>
 
-    <section class="a-propos">
+    <section  id ="home" class="a-propos">
       <img src="assets/Bandeau.jpg" alt="Adopte un chat">
       <h2>A propos de nous.</h2>
 
@@ -52,7 +54,7 @@
       </p>
     </section>
 
-    <section class="adopt-your-cat">
+    <section id="adopt-cat"class="adopt-your-cat">
       <h2 class="adopt-section-title">Adopte ton chat !</h2>
       <form class="search">
         <div class="form_container">
@@ -201,43 +203,39 @@
 
 
   </main>
-
-  <footer class="footer">
-
-
-    <div class="row">
-      <div class="footer-col">
-
-        <div class="Cookie">
-          <p class="toto"><a class="mention" href="#">Cookies</a></p>
-          <p class="toto"><a class="mention" href="#">Mentions Légales</a></p>
-        </div>
-      </div>
-      <div class="footer-col">
-        <h4 class="cat">Copyright© wildcat 2022.</h4>
-
-      </div>
-      <div class="footer-col">
-        <h4> suivez-vous</h4>
-        <div class="social-media"></div>
-        <a class="titi" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-
-        <a class="titi" href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-
-        <a class="titi" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-      </div>
-
-    </div>
-
-    </div>
-
-    <!------
+<!------FOOTER------>
   
+<footer class="footer">
 
-    <img class="picture" src="./assets/social_network.png">
-    ---->
-  </footer>
 
+  <div class="row">
+    <div class="footer-col">
+
+      <div class="Cookie">
+        <p class="cookie-mention"><a class="mention" href="#">Cookies</a></p>
+        <p class="cookie-mention"><a class="mention" href="#">Mentions Légales</a></p>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4 class="cat">Copyright© wildcat 2022.</h4>
+
+    </div>
+    <div class="footer-col">
+      <h4> suivez-vous</h4>
+      <div class="social-media"></div>
+      <a class="social-media-links" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+
+      <a class="social-media-links" href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+
+      <a class="social-media-links" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+    </div>
+
+  </div>
+
+  </div>
+
+ 
+</footer>
   <script src="header.js"></script>
   <script src="carrousel_button.js"></script>
   <script src="infos-chats.js"></script>

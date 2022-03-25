@@ -20,7 +20,7 @@
   border-radius: 8px;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.43);
   width: 50%;
-  height: 80px;
+  height: 14vh;
   align-items: center;
   margin: auto;
   padding: auto;
@@ -67,6 +67,8 @@
   margin-top: 2rem;
 }
 
+
+//responsive
 @media screen and (min-width: 768px) {
   .donation {
     text-align: center;
