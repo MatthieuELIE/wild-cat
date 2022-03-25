@@ -458,16 +458,24 @@ select {
 
 @media screen and (max-width: 850px) {
   .search_buttons_block {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .search_buttons_block div {
+}
+
+@media screen and (max-width: 788px) {
+  div {
     margin-top: 4vh;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .search_buttons_block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -483,6 +491,12 @@ select {
   position: absolute;
   height: 15vw;
   top: -120px;
+}
+
+@media screen and (min-width: 1440px) {
+  .sleeping_cat {
+    top: -135px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -553,7 +567,6 @@ select {
   height: 50px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-top: 5vh;
   overflow: hidden;
   border: 1px solid #000;
   font-family: 'Lato', sans-serif;
@@ -1000,7 +1013,7 @@ ul {
 
 .logo {
   width: auto;
-  height: 150%;
+  height: 120%;
   margin-top: 0rem;
   margin-left: 10px;
   border: 1px solid #1d4e89;
@@ -1022,7 +1035,7 @@ ul {
   font-size: 1.1rem;
   z-index: 99;
   background-color: #8dc9d6;
-  height: 6vh;
+  height: 10vh;
   position: fixed;
   width: 100%;
   top: 0px;
@@ -1361,23 +1374,30 @@ p {
   background-image: url("../../assets/card.png");
   background-repeat: no-repeat;
   background-size: 300px;
-  background-position: 75% 0%;
+  background-position: 105% -4%;
 }
 
 .adopt-your-cat .adopt-section-title {
   text-align: center;
-  margin-top: 10vh;
+  margin-top: 17vh;
 }
 
 .adopt-your-cat .search {
-  /*@include flexSpaceAround;*/
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90vw;
   color: #2d3142;
-  margin: 20vh auto auto;
+  margin: 23vh auto auto;
+  background-color: #8dc9d6;
   /*background-color: $color-primary;*/
   padding: 20px;
+  border-radius: 10px 10px 0;
 }
 
 .adopt-your-cat .search .form_container {
@@ -1386,8 +1406,9 @@ p {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .adopt-your-cat .search .form_container .search-block {
@@ -1404,11 +1425,19 @@ p {
   margin: 0px 10px;
 }
 
+.adopt-your-cat .search .form_container .search-block label {
+  display: none;
+}
+
+.adopt-your-cat .search .form_container .search-block select {
+  border: none;
+}
+
 .carrousel {
   position: relative;
   width: 90vw;
   height: 90vh;
-  margin: 100px auto;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -1468,29 +1497,42 @@ p {
   width: 100%;
 }
 
-@media screen and (max-width: 962px) {
+@media screen and (max-width: 788px) {
+  .search {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .adopt-your-cat {
+    background-position: 160% -4%;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .adopt-your-cat {
+    background-position: 220% -4%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .adopt-your-cat {
+    background-position: 39vh -4%;
+  }
+}
+
+@media screen and (max-width: 460px) {
   .form_container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .select_field {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .form_container {
-    background-color: #8dc9d6;
-    width: 50%;
-    margin: 0 auto;
-    padding: 10px;
-    min-width: 200px;
-    border: 1px solid #1d4e89;
-  }
-  .select_field {
-    width: 75%;
+  .form_container select {
+    margin: 10px auto;
   }
 }
 
@@ -1725,12 +1767,13 @@ p {
   margin-bottom: 1em;
 }
 
-.title {
+.title h1 {
   text-align: center;
-  margin-top: 5vw;
+  margin-top: 5rem;
+  padding-top: 5rem;
   color: #1d4e89;
   font-family: "Boogaloo", "cursive";
-  font-size: x-large;
+  font-size: 4rem;
 }
 
 .donation {
@@ -1868,5 +1911,10 @@ p {
   .btn-don {
     margin-top: 60px;
   }
+}
+
+.association-external-links a {
+  font-size: 0.8rem;
+  font-family: "Tienne", sans-serif;
 }
 /*# sourceMappingURL=main.css.map */
